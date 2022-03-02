@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+}
+
+.test-bg {
+  background-color: #282c34;
+}
+
+.root {
+  min-height: 100vh;
+}
