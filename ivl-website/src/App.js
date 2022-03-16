@@ -13,8 +13,8 @@ function App() {
     <Router>
       <React.Fragment>
         <CssBaseline />
-        <Container maxWidth="xl">
-          <Box sx={{ bgcolor: "#EFECE5", height: "100vh" }}>
+        <Container maxWidth="md">
+          <Box sx={{ bgcolor: "#FFFFFF", height: "100vh" }}>
             <MainNav />
             <Routes>
               <Route path="/" element={<Main />}></Route>
