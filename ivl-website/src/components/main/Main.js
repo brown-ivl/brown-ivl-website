@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
-import Link from "@mui/material/Link";
 import EmailIcon from "@mui/icons-material/Email";
 import Grid from "@mui/material/Grid";
 import ReactMarkdown from "react-markdown";
@@ -23,15 +22,23 @@ const Main = () => {
 
   // Markdown text parsing logic
   const parseContent = (content) => {
+    // console.log(content);
     var arr = content.split("\n");
+
+    console.log(arr);
 
     arr = arr.splice(1, arr.length - 1);
 
+    console.log(arr);
+
     arr.forEach(function (item, index, object) {
       if (item === "") {
+        console.log("splicing");
         object.splice(index, 1);
       }
+    });
 
+    arr.forEach(function (item, index, object) {
       if (object[index][0] === "#" && object[index][1] === " ") {
         object[index] = object[index].replace("#", "").trim();
       }
