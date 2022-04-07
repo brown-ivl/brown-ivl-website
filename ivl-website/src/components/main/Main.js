@@ -1,16 +1,61 @@
-import * as React from "react";
+import React, { useState, useEffect } from "react";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 import EmailIcon from "@mui/icons-material/Email";
 import Grid from "@mui/material/Grid";
-import Carousel from "react-material-ui-carousel";
+import ReactMarkdown from "react-markdown";
 
 import Logo from "../../images/placeholders/stocklogo.jpeg";
 import Headshot from "../../images/placeholders/plHeadshot.png";
+import HomePage from "../../md/main/HomePage.md";
 import "./Main.css";
 
 const Main = () => {
+  const [contentMap, setContentMap] = useState({});
+
+  useEffect(() => {
+    // Fetch text from markdown file
+    fetch(HomePage)
+      .then((res) => res.text())
+      .then((text) => setContentMap(parseContent(text)));
+  }, []);
+
+  // Markdown text parsing logic
+  const parseContent = (content) => {
+    var arr = content.split("\n");
+
+    arr = arr.splice(1, arr.length - 1);
+
+    arr.forEach(function (item, index, object) {
+      if (item === "") {
+        object.splice(index, 1);
+      }
+
+      if (object[index][0] === "#" && object[index][1] === " ") {
+        object[index] = object[index].replace("#", "").trim();
+      }
+    });
+
+    const contentMap = convertArrayToMap(arr);
+
+    console.log("convertToMap: ", contentMap);
+
+    return contentMap;
+  };
+
+  const convertArrayToMap = (arr) => {
+    let r = {};
+
+    for (let i = 0; i < arr.length; i += 2) {
+      let key = arr[i],
+        value = arr[i + 1];
+      r[key] = value;
+    }
+
+    return r;
+  };
+
   return (
     <div>
       <Paper
@@ -23,8 +68,8 @@ const Main = () => {
         }}
       >
         <Grid container spacing={2}>
-          <Grid item xs={10}>
-            <div sx={{ display: "flex", flexDirection: "column" }}>
+          <Grid item xs={8}>
+            {/* <div sx={{ display: "flex", flexDirection: "column" }}>
               <Typography variant="h3" sx={{ ml: 2 }}>
                 Srinath Sridhar
               </Typography>
@@ -37,12 +82,37 @@ const Main = () => {
               <Typography variant="subtitle2" sx={{ ml: 2 }}>
                 CIT 407, 115 Waterman Street, Providence, RI 02912
               </Typography>
+            </div> */}
+            <div>
+              <Typography sx={{ ml: 2 }}>
+                <ReactMarkdown
+                  children={contentMap["Name"]}
+                  linkTarget="_blank"
+                  className="format-name"
+                />
+              </Typography>
+              {/* <EmailIcon sx={{ ml: 2 }} className="inline-icon"></EmailIcon> */}
+              <Typography sx={{ ml: 2, display: "flex" }}>
+                <EmailIcon className="inline-icon"></EmailIcon>
+                <ReactMarkdown
+                  children={contentMap["Email"]}
+                  linkTarget="_blank"
+                  className="inline-email"
+                />
+              </Typography>
+              <Typography variant="subtitle2" sx={{ ml: 2 }}>
+                <ReactMarkdown
+                  children={contentMap["Address"]}
+                  linkTarget="_blank"
+                  className="align-address"
+                />
+              </Typography>
             </div>
           </Grid>
-          <Grid item xs={2}>
-            <div className="fill">
-              <img className="logo" src={Logo} alt="Brown Logo" />
-            </div>
+          <Grid item xs={4}>
+            {/* <div className="fill">
+              <img className="logo" src={Headshot} alt="Brown Logo" />
+            </div> */}
           </Grid>
         </Grid>
       </Paper>
@@ -68,13 +138,10 @@ const Main = () => {
           </Grid>
           <Grid item xs={8}>
             <Typography variant="body1" sx={{ ml: 0.5, mr: 0.5 }}>
-              I am an assistant professor in the Department of Computer Science
-              at Brown University. My research is in 3D computer vision and
-              machine learning. Specifically, I am interested in 3D
-              spatiotemporal visual understanding of human physical
-              interactions. I build methods for human-centric, object-centric,
-              and interaction-centric understanding of our world from videos and
-              images.
+              <ReactMarkdown
+                children={contentMap["About"]}
+                linkTarget="_blank"
+              />
             </Typography>
             <Paper
               elevation={5}
@@ -89,27 +156,27 @@ const Main = () => {
                 variant="body1"
                 sx={{ ml: 0.5, color: "#ffffff", mr: 0.5 }}
               >
-                Prospective Students: We are always looking for motivated
-                students to join us. Please see this page for information on PhD
-                admissions. If you are already an undergrad/grad at Brown,
-                please email me directly.
+                <ReactMarkdown
+                  children={contentMap["Prospective Students"]}
+                  linkTarget="_blank"
+                />
               </Typography>
             </Paper>
           </Grid>
         </Grid>
         <Grid container spacing={1}>
           <Grid item xs={12}>
-            <Typography variant="body1" sx={{ ml: 1.5, mr: 0.5 }}>
-              I am an assistant professor in the Department of Computer Science
-              at Brown University. My research is in 3D computer vision and
-              machine learning. Specifically, I am interested in 3D
-              spatiotemporal visual understanding of human physical
-              interactions. I build methods for human-centric, object-centric,
-              and interaction-centric understanding of our world from videos and
-              images.
+            <Typography variant="body1" sx={{ ml: 1.5, mr: 0.5, mt: -2 }}>
+              <ReactMarkdown
+                children={contentMap["Other Work"]}
+                linkTarget="_blank"
+              />
             </Typography>
             <Typography variant="body1" align="center" sx={{ mt: 1 }}>
-              CV / Google Scholar / Github / Twitter
+              <ReactMarkdown
+                children={contentMap["Links"]}
+                linkTarget="_blank"
+              />
             </Typography>
           </Grid>
         </Grid>

@@ -1,11 +1,36 @@
+.format-name {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: -50px;
+}
 .inline-icon {
-    vertical-align: bottom;
+    /* vertical-align: bottom;
     font-size: 18px !important;
+    */
+    margin-top: -29px;
+ }
+
+ .inline-email {
+    margin-top: -50px;
+    font-size: 18px !important;
+    margin-left: 2px;
+ }
+
+ .align-address {
+     margin-top: -20px;
  }
 
  .logo {
-     width: 100px;
-     height: 100px;
+     width: 200px;
+     height: 200px;
+     margin-left: 20px;
+     margin-top: 10px;
+ }
+
+ .headshot-box {
+    width: 250px;
+    height: 250px;
+    margin-left: 6px;
  }
 
  .headshot {
@@ -31,4 +56,8 @@
     flex-shrink: 0;
     min-width: 100%;
     min-height: 100%
+} */
+
+/* @media screen and (max-width: 600px) { 
+    .headshot { display: none; }      
 } */
