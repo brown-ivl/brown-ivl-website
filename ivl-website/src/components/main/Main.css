@@ -11,9 +11,10 @@
  }
 
  .inline-email {
-    margin-top: -50px;
+    margin-top: -48px;
     font-size: 18px !important;
     margin-left: 2px;
+    /* color: #820000; */
  }
 
  .align-address {
@@ -61,3 +62,8 @@
 /* @media screen and (max-width: 600px) { 
     .headshot { display: none; }      
 } */
+
+a, u {
+    text-decoration: none;
+    color: #820000;
+}

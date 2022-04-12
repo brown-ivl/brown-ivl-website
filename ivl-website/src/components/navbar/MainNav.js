@@ -9,7 +9,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
-import ReactMarkdown from "react-markdown";
 
 import Pages from "../../md/navbar/Pages.md";
 import "./MainNav.css";
@@ -31,8 +30,17 @@ const MainNav = () => {
     setAnchorElUser(event.currentTarget);
   };
 
-  const handleCloseNavMenu = () => {
+  const handleCloseNavMenu = (event) => {
     setAnchorElNav(null);
+
+    // get page name from menu item
+    const pageName = event.currentTarget.innerText.toLowerCase();
+
+    if (pageName === "home") {
+      window.location.href = "/";
+    } else {
+      window.location.href = `/${pageName}`;
+    }
   };
 
   const handleCloseUserMenu = () => {

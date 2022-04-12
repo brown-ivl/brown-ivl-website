@@ -1,0 +1,41 @@
+[ 
+    {
+        "year": 2022,
+        "dateOfPublication": "2022-01-19",
+        "title": "ConDor: Self-Supervised Canonicalization of 3D Pose for Partial Shapes",
+        "authors": "Rahul Sajnani1, Adrien Poulenard2, Jivitesh Jain1, Radhika Dua3, Leonidas J. Guibas2, Srinath Sridhar4",
+        "journal": "arXiv 2022",
+        "projectPage": "https://ivl.cs.brown.edu/ConDor/",
+        "pdf": "https://arxiv.org/pdf/2201.07788.pdf",
+        "moreInfo": "",
+        "video": "https://www.youtube.com/watch?v=JKDiCvVPoSw",
+        "image": "",
+        "gif": ""
+    },
+    {
+        "year": 2021,
+        "dateOfPublication": "2022-04-05",
+        "title": "Neural Fields in Visual Computing and Beyond",
+        "authors": "Yiheng Xie, Towaki Takikawa, Shunsuke Saito, Or Litany, Shiqin Yan, Numair Khan, Federico Tombari, James Tompkin, Vincent Sitzmann+, Srinath Sridhar+ (+ Equal advising)",
+        "journal": "arXiv 2021",
+        "projectPage": "https://neuralfields.cs.brown.edu/",
+        "pdf": "https://arxiv.org/pdf/2111.11426.pdf",
+        "moreInfo": "https://twitter.com/drsrinathsridha/status/1463244076954918921",
+        "video": "",
+        "image": "",
+        "gif": ""
+    },
+    {
+        "year": 2021,
+        "dateOfPublication": "2021-05-17",
+        "title": "StrobeNet: Category-Level Multiview Reconstruction of Articulated Objects",
+        "authors": "Ge Zhang, Or Litany, Srinath Sridhar, Leonidas Guibas",
+        "journal": "arXiv 2021",
+        "projectPage": "https://dzhange.github.io/StrobeNet/",
+        "pdf": "https://arxiv.org/pdf/2105.08016.pdf",
+        "moreInfo": "",
+        "video": "https://www.youtube.com/watch?v=gDHYu6I7zv0",
+        "image": "",
+        "gif": ""
+    }
+]

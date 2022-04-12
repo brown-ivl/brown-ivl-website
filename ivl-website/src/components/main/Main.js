@@ -4,6 +4,7 @@ import Typography from "@mui/material/Typography";
 import EmailIcon from "@mui/icons-material/Email";
 import Grid from "@mui/material/Grid";
 import ReactMarkdown from "react-markdown";
+import Link from "@mui/material/Link";
 
 import Logo from "../../images/placeholders/stocklogo.jpeg";
 import Headshot from "../../images/placeholders/plHeadshot.png";
@@ -25,15 +26,10 @@ const Main = () => {
     // console.log(content);
     var arr = content.split("\n");
 
-    console.log(arr);
-
     arr = arr.splice(1, arr.length - 1);
-
-    console.log(arr);
 
     arr.forEach(function (item, index, object) {
       if (item === "") {
-        console.log("splicing");
         object.splice(index, 1);
       }
     });
@@ -66,7 +62,7 @@ const Main = () => {
   return (
     <div>
       <Paper
-        elevation={5}
+        elevation={3}
         sx={{
           pt: 1,
           mt: 1,
@@ -99,7 +95,7 @@ const Main = () => {
                 />
               </Typography>
               {/* <EmailIcon sx={{ ml: 2 }} className="inline-icon"></EmailIcon> */}
-              <Typography sx={{ ml: 2, display: "flex" }}>
+              <Typography sx={{ ml: 2, display: "flex", mt: -1 }}>
                 <EmailIcon className="inline-icon"></EmailIcon>
                 <ReactMarkdown
                   children={contentMap["Email"]}
@@ -107,7 +103,7 @@ const Main = () => {
                   className="inline-email"
                 />
               </Typography>
-              <Typography variant="subtitle2" sx={{ ml: 2 }}>
+              <Typography variant="subtitle2" sx={{ ml: 2, mt: 0 }}>
                 <ReactMarkdown
                   children={contentMap["Address"]}
                   linkTarget="_blank"
@@ -125,7 +121,7 @@ const Main = () => {
       </Paper>
 
       <Paper
-        elevation={5}
+        elevation={3}
         sx={{
           height: "auto",
           bgcolor: "#F7F6F2",
@@ -151,7 +147,7 @@ const Main = () => {
               />
             </Typography>
             <Paper
-              elevation={5}
+              elevation={3}
               sx={{
                 height: "auto",
                 bgcolor: "#605770",
@@ -189,7 +185,7 @@ const Main = () => {
         </Grid>
       </Paper>
       <Paper
-        elevation={5}
+        elevation={3}
         sx={{
           height: "auto",
           bgcolor: "#F7F6F2",

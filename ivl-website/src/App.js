@@ -1,3 +1,4 @@
+import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Container from "@mui/material/Container";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -6,7 +7,7 @@ import Box from "@mui/material/Box";
 import "./App.css";
 import MainNav from "./components/navbar/MainNav";
 import Main from "./components/main/Main";
-import React from "react";
+import Research from "./components/research/Research";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <MainNav />
             <Routes>
               <Route path="/" element={<Main />}></Route>
+              <Route path="/research" element={<Research />}></Route>
             </Routes>
           </Box>
         </Container>
