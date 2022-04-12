@@ -48,86 +48,83 @@ function Research() {
           </Link>
         </Typography>
         {ResearchPapers.map((item, index) => {
-          const year = item.year;
-          if (year === 2021 || year == 2022) {
-            return (
-              <div>
-                <Paper
-                  elevation={3}
-                  sx={{
-                    pt: 1,
-                    mt: 1,
-                    height: "auto",
-                    bgcolor: "#F7F6F2",
-                    ml: 1,
-                    mr: 1,
-                  }}
-                >
-                  <Grid container spacing={2}>
-                    <Grid item xs={2}>
-                      <div>
-                        <h3>Image here</h3>
-                      </div>
-                    </Grid>
-                    <Grid item xs={10}>
+          return (
+            <div>
+              <Paper
+                elevation={3}
+                sx={{
+                  pt: 1,
+                  mt: 1,
+                  height: "auto",
+                  bgcolor: "#F7F6F2",
+                  ml: 1,
+                  mr: 1,
+                }}
+              >
+                <Grid container spacing={2}>
+                  <Grid item xs={2}>
+                    <div>
+                      <h3>Image here</h3>
+                    </div>
+                  </Grid>
+                  <Grid item xs={10}>
+                    <Link
+                      href={item.projectPage}
+                      target="_blank"
+                      color="#820000"
+                      underline="none"
+                    >
+                      <Typography variant="h6">{item.title}</Typography>
+                    </Link>
+                    <Typography variant="body1">{item.authors}</Typography>
+                    <Typography variant="body2" sx={{ mt: 0.5 }}>
+                      <b>{item.journal}</b>
+                    </Typography>
+                    <Typography
+                      sx={{ ml: 2, display: "flex", mt: 0.5, mb: 0.5 }}
+                    >
+                      <PictureAsPdfIcon className="inline-pdf"></PictureAsPdfIcon>
+                      <Link
+                        href={item.pdf}
+                        target="_blank"
+                        color="#820000"
+                        underline="none"
+                      >
+                        PDF
+                      </Link>
+                      <VideoFileRoundedIcon className="inline-video"></VideoFileRoundedIcon>
+                      <Link
+                        href={item.video}
+                        target="_blank"
+                        color="#820000"
+                        underline="none"
+                      >
+                        Video
+                      </Link>
+                      <InfoOutlinedIcon className="inline-info"></InfoOutlinedIcon>
+                      <Link
+                        href={item.moreInfo}
+                        target="_blank"
+                        color="#820000"
+                        underline="none"
+                      >
+                        More Info
+                      </Link>
+                      <DashboardTwoToneIcon className="inline-project"></DashboardTwoToneIcon>
                       <Link
                         href={item.projectPage}
                         target="_blank"
                         color="#820000"
                         underline="none"
                       >
-                        <Typography variant="h6">{item.title}</Typography>
+                        Project Page
                       </Link>
-                      <Typography variant="body1">{item.authors}</Typography>
-                      <Typography variant="body2" sx={{ mt: 0.5 }}>
-                        <b>{item.journal}</b>
-                      </Typography>
-                      <Typography
-                        sx={{ ml: 2, display: "flex", mt: 0.5, mb: 0.5 }}
-                      >
-                        <PictureAsPdfIcon className="inline-pdf"></PictureAsPdfIcon>
-                        <Link
-                          href={item.pdf}
-                          target="_blank"
-                          color="#820000"
-                          underline="none"
-                        >
-                          PDF
-                        </Link>
-                        <VideoFileRoundedIcon className="inline-video"></VideoFileRoundedIcon>
-                        <Link
-                          href={item.video}
-                          target="_blank"
-                          color="#820000"
-                          underline="none"
-                        >
-                          Video
-                        </Link>
-                        <InfoOutlinedIcon className="inline-info"></InfoOutlinedIcon>
-                        <Link
-                          href={item.moreInfo}
-                          target="_blank"
-                          color="#820000"
-                          underline="none"
-                        >
-                          More Info
-                        </Link>
-                        <DashboardTwoToneIcon className="inline-project"></DashboardTwoToneIcon>
-                        <Link
-                          href={item.projectPage}
-                          target="_blank"
-                          color="#820000"
-                          underline="none"
-                        >
-                          Project Page
-                        </Link>
-                      </Typography>
-                    </Grid>
+                    </Typography>
                   </Grid>
-                </Paper>
-              </div>
-            );
-          }
+                </Grid>
+              </Paper>
+            </div>
+          );
         })}
       </Paper>
     </div>
