@@ -9,3 +9,7 @@
 .root {
   min-height: 100vh;
 }
+
+#root {
+  background-color: #FFFFFF;
+}

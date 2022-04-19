@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
-import EmailIcon from "@mui/icons-material/Email";
 import Grid from "@mui/material/Grid";
 import ReactMarkdown from "react-markdown";
-import Link from "@mui/material/Link";
+import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
 
 import Logo from "../../images/placeholders/stocklogo.jpeg";
 import Headshot from "../../images/placeholders/plHeadshot.png";
@@ -96,7 +95,7 @@ const Main = () => {
               </Typography>
               {/* <EmailIcon sx={{ ml: 2 }} className="inline-icon"></EmailIcon> */}
               <Typography sx={{ ml: 2, display: "flex", mt: -1 }}>
-                <EmailIcon className="inline-icon"></EmailIcon>
+                <EmailRoundedIcon className="inline-icon"></EmailRoundedIcon>
                 <ReactMarkdown
                   children={contentMap["Email"]}
                   linkTarget="_blank"
