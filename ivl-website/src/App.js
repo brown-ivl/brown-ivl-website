@@ -8,6 +8,7 @@ import "./App.css";
 import MainNav from "./components/navbar/MainNav";
 import Main from "./components/main/Main";
 import Research from "./components/research/Research";
+import IvlHome from "./components/ivlhome/IvlHome";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Main />}></Route>
               <Route path="/research" element={<Research />}></Route>
+              <Route path="/ivlhome" element={<IvlHome />}></Route>
             </Routes>
           </Box>
         </Container>
