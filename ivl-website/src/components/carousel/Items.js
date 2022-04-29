@@ -1,16 +1,17 @@
 import React from "react";
 import Paper from "@mui/material/Paper";
-import Button from "@mui/material/Button";
+
+import "./Items.css";
 
 function Items(props) {
   return (
     <div>
       {" "}
       <Paper
+        elevation={3}
         sx={{
-          pt: 1,
           mt: 1,
-          height: "50vh",
+          height: "60vh",
           bgcolor: "#F7F6F2",
         }}
       >
@@ -18,7 +19,7 @@ function Items(props) {
         <p>{props.item.description}</p>
         <Button className="CheckButton">Check it out!</Button> */}
         <img
-          className="img-style"
+          className="carousel-item"
           src={props.item.path}
           alt={props.item.name}
         />

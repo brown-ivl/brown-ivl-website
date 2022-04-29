@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
@@ -11,7 +11,6 @@ import SchoolIcon from "@mui/icons-material/School";
 
 import ResearchPapers from "../../papers/ResearchPapers.json";
 import "./Research.css";
-import { linearProgressClasses } from "@mui/material";
 
 function Research() {
   var uniqueYears = [];
