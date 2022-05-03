@@ -71,20 +71,6 @@ const Main = () => {
       >
         <Grid container spacing={2}>
           <Grid item xs={8}>
-            {/* <div sx={{ display: "flex", flexDirection: "column" }}>
-              <Typography variant="h3" sx={{ ml: 2 }}>
-                Srinath Sridhar
-              </Typography>
-              <div>
-                <EmailIcon sx={{ ml: 2 }} className="inline-icon"></EmailIcon>
-                <Link href="#" sx={{ ml: 0.5 }}>
-                  srinath@brown.edu
-                </Link>
-              </div>
-              <Typography variant="subtitle2" sx={{ ml: 2 }}>
-                CIT 407, 115 Waterman Street, Providence, RI 02912
-              </Typography>
-            </div> */}
             <div>
               <Typography sx={{ ml: 2 }}>
                 <ReactMarkdown
