@@ -4,6 +4,12 @@ Please refer to this README for instructions on how to populate content and othe
 
 ## General Instructions
 
+### Running the app locally
+
+cd ivl-website
+npm i
+npm start
+
 ### Important folder structure is as follows
 
 -> ivl-website

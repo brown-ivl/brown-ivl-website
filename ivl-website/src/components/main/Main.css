@@ -67,3 +67,12 @@ a, u {
     text-decoration: none;
     color: #820000;
 }
+
+.Collapsible__trigger {
+    font-size: 15px;
+    color: #820000;   
+}
+ .collapsible-div{
+    margin-top: -10px;
+    margin-bottom: 10px;
+ }

@@ -4,11 +4,13 @@ import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import ReactMarkdown from "react-markdown";
 import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
+import Collapsible from "react-collapsible";
 
 import Logo from "../../images/placeholders/stocklogo.jpeg";
 import Headshot from "../../images/placeholders/plHeadshot.png";
 import HomePage from "../../md/main/HomePage.md";
 import "./Main.css";
+import { Box } from "@mui/system";
 
 const Main = () => {
   const [contentMap, setContentMap] = useState({});
@@ -22,23 +24,33 @@ const Main = () => {
 
   // Markdown text parsing logic
   const parseContent = (content) => {
-    // console.log(content);
-    var arr = content.split("\n");
+    // split content based on newline and assign to array
+    var arr = content.split("\n\n");
 
+    // splice the first element of the array (the comment at the start of md file)
     arr = arr.splice(1, arr.length - 1);
 
+    // in the array, if the item is empty, splice it out
     arr.forEach(function (item, index, object) {
       if (item === "") {
         object.splice(index, 1);
       }
     });
 
+    /* 
+      we have to forEach once again as if you write this logic in the above 
+      forEach, splicing dynamically changes the length of the array and the 
+      logic fails.
+      Here we check if the object is a heading (ie. starts with #) then we
+      remove the # so it can be used as a key later on.
+    */
     arr.forEach(function (item, index, object) {
       if (object[index][0] === "#" && object[index][1] === " ") {
         object[index] = object[index].replace("#", "").trim();
       }
     });
 
+    // create an dict with the key as the heading and the value as the content
     const contentMap = convertArrayToMap(arr);
 
     console.log("convertToMap: ", contentMap);
@@ -72,22 +84,22 @@ const Main = () => {
         <Grid container spacing={2}>
           <Grid item xs={8}>
             <div>
-              <Typography sx={{ ml: 2 }}>
+              <Box sx={{ ml: 2 }}>
                 <ReactMarkdown
                   children={contentMap["Name"]}
                   linkTarget="_blank"
                   className="format-name"
                 />
-              </Typography>
+              </Box>
               {/* <EmailIcon sx={{ ml: 2 }} className="inline-icon"></EmailIcon> */}
-              <Typography sx={{ ml: 2, display: "flex", mt: -1 }}>
+              <Box sx={{ ml: 2, display: "flex", mt: -1 }}>
                 <EmailRoundedIcon className="inline-icon"></EmailRoundedIcon>
                 <ReactMarkdown
                   children={contentMap["Email"]}
                   linkTarget="_blank"
                   className="inline-email"
                 />
-              </Typography>
+              </Box>
               <Typography variant="subtitle2" sx={{ ml: 2, mt: 0 }}>
                 <ReactMarkdown
                   children={contentMap["Address"]}
@@ -125,12 +137,12 @@ const Main = () => {
             </div>
           </Grid>
           <Grid item xs={8}>
-            <Typography variant="body1" sx={{ ml: 0.5, mr: 0.5 }}>
+            <Box sx={{ ml: 0.5, mr: 0.5, mt: -1 }}>
               <ReactMarkdown
                 children={contentMap["About"]}
                 linkTarget="_blank"
               />
-            </Typography>
+            </Box>
             <Paper
               elevation={3}
               sx={{
@@ -140,32 +152,29 @@ const Main = () => {
                 mt: 0.5,
               }}
             >
-              <Typography
-                variant="body1"
-                sx={{ ml: 0.5, color: "#ffffff", mr: 0.5 }}
-              >
+              <Box sx={{ ml: 0.5, color: "#ffffff", mr: 0.5 }}>
                 <ReactMarkdown
                   children={contentMap["Prospective Students"]}
                   linkTarget="_blank"
                 />
-              </Typography>
+              </Box>
             </Paper>
           </Grid>
         </Grid>
         <Grid container spacing={1}>
           <Grid item xs={12}>
-            <Typography variant="body1" sx={{ ml: 1.5, mr: 0.5, mt: -2 }}>
+            <Box sx={{ ml: 1.5, mr: 0.5, mt: -2 }}>
               <ReactMarkdown
                 children={contentMap["Other Work"]}
                 linkTarget="_blank"
               />
-            </Typography>
-            <Typography variant="body1" align="center" sx={{ mt: 1 }}>
+            </Box>
+            <Box textAlign={"center"} sx={{ mt: 1 }}>
               <ReactMarkdown
                 children={contentMap["Links"]}
                 linkTarget="_blank"
               />
-            </Typography>
+            </Box>
           </Grid>
         </Grid>
       </Paper>
@@ -180,32 +189,30 @@ const Main = () => {
       >
         <Grid container spacing={1}>
           <Grid item xs={12}>
-            <Typography variant="h5" sx={{ ml: 1.5, mr: 0.5 }}>
-              Updates
-            </Typography>
-            <Typography variant="body1" sx={{ ml: 1.5, mr: 0.5 }}>
-              <ul>
-                <li>
-                  [ Nov-2021 ]: Our new report and companion website provides a
-                  consolidated overview of coordinate-based neural networks
-                  (neural fields) in visual computing and beyond by reviewing
-                  over 250 papers.
-                </li>
-                <li>
-                  [ Oct-2021 ]: I helped co-organize the Second 3DReps workshop
-                  at ICCV. The workshop recording is now available at this link.
-                </li>
-                <li>
-                  [ Oct-2021 ]: HuMoR, a human motion model for robust pose
-                  estimation will be presented at ICCV 2021.
-                </li>
-                <li>
-                  [ Apr-2021 ]: Srinath received a Google Research Scholar award
-                  to further the group's research on object-centric
-                  perception/synthesis for mixed reality.
-                </li>
-              </ul>
-            </Typography>
+            <Box sx={{ ml: 1.5, mr: 0.5 }}>Updates</Box>
+            <Box sx={{ ml: 1.5, mr: 0.5 }}>
+              <ReactMarkdown
+                children={contentMap["Updates"]}
+                linkTarget="_blank"
+              />
+              <Collapsible
+                trigger="Show More"
+                className="collapsible-div"
+                triggerWhenOpen="Show Less"
+                onOpen={() => {
+                  window.scroll({
+                    top: document.body.offsetHeight,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
+              >
+                <ReactMarkdown
+                  children={contentMap["Collapsible Updates"]}
+                  linkTarget="_blank"
+                />
+              </Collapsible>
+            </Box>
           </Grid>
         </Grid>
       </Paper>
