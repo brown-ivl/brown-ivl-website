@@ -9,8 +9,10 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
+import { useNavigate } from "react-router-dom";
 
 import Pages from "../../md/navbar/Pages.md";
+import Logo from "../../images/logos/brown.png";
 import "./MainNav.css";
 
 // const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -18,6 +20,7 @@ import "./MainNav.css";
 const MainNav = () => {
   const [anchorElNav, setAnchorElNav] = useState(null);
   const [anchorElUser, setAnchorElUser] = useState(null);
+  const navigate = useNavigate();
 
   // state for markdown content
   const [pages, setPages] = useState([]);
@@ -58,14 +61,24 @@ const MainNav = () => {
     <AppBar position="static" sx={{ bgcolor: "#605770" }}>
       <Container>
         <Toolbar disableGutters>
-          <Typography
-            variant="h6"
+          <Box
             noWrap
             component="div"
-            sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
+            sx={{
+              display: { xs: "none", md: "flex" },
+              width: "60px",
+              height: "60px",
+              ml: -1,
+              mr: 1,
+            }}
           >
-            LOGO
-          </Typography>
+            <img
+              className="brown-logo"
+              src={Logo}
+              alt="Brown logo"
+              onClick={() => navigate("/")}
+            />
+          </Box>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton

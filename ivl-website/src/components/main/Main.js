@@ -5,12 +5,11 @@ import Grid from "@mui/material/Grid";
 import ReactMarkdown from "react-markdown";
 import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
 import Collapsible from "react-collapsible";
+import Box from "@mui/material/Box";
 
-import Logo from "../../images/placeholders/stocklogo.jpeg";
-import Headshot from "../../images/placeholders/plHeadshot.png";
+import Headshot from "../../images/portraits/srinath.jpg";
 import HomePage from "../../md/main/HomePage.md";
 import "./Main.css";
-import { Box } from "@mui/system";
 
 const Main = () => {
   const [contentMap, setContentMap] = useState({});
