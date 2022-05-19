@@ -9,7 +9,7 @@ import InfoRoundedIcon from "@mui/icons-material/InfoRounded";
 import DashboardRoundedIcon from "@mui/icons-material/DashboardRounded";
 import SchoolIcon from "@mui/icons-material/School";
 
-import ResearchPapers from "../../papers/ResearchPapers.json";
+import ResearchPapers from "../../json/papers/ResearchPapers.json";
 import "./Research.css";
 
 function Research() {
