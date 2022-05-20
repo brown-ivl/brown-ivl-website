@@ -12,14 +12,12 @@ import MenuItem from "@mui/material/MenuItem";
 import { useNavigate } from "react-router-dom";
 
 import Pages from "../../md/navbar/Pages.md";
-import Logo from "../../images/logos/brown.png";
+import Images from "../../json/nav/Images.json";
 import "./MainNav.css";
-
-// const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const MainNav = () => {
   const [anchorElNav, setAnchorElNav] = useState(null);
-  const [anchorElUser, setAnchorElUser] = useState(null);
+  // const [anchorElUser, setAnchorElUser] = useState(null);
   const navigate = useNavigate();
 
   // state for markdown content
@@ -29,9 +27,9 @@ const MainNav = () => {
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
+  // const handleOpenUserMenu = (event) => {
+  //   setAnchorElUser(event.currentTarget);
+  // };
 
   const handleCloseNavMenu = (event) => {
     setAnchorElNav(null);
@@ -46,9 +44,9 @@ const MainNav = () => {
     }
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
+  // const handleCloseUserMenu = () => {
+  //   setAnchorElUser(null);
+  // };
 
   // fetch markdown content
   useEffect(() => {
@@ -74,8 +72,8 @@ const MainNav = () => {
           >
             <img
               className="brown-logo"
-              src={Logo}
-              alt="Brown logo"
+              src={Images.filter((image) => image.name === "logo")[0].path}
+              alt={Images.filter((image) => image.name === "logo")[0].alt}
               onClick={() => navigate("/")}
             />
           </Box>

@@ -18,7 +18,7 @@ export default function RecipeReviewCard() {
           bgcolor: "#F7F6F2",
         }}
       >
-        <Typography variant="h4" component="h1" align="center" marginTop={0.5}>
+        <Typography variant="h5" align="center">
           Principal Investigator
         </Typography>
         <Grid
@@ -26,7 +26,7 @@ export default function RecipeReviewCard() {
           spacing={1}
           alignItems="center"
           justifyContent="center"
-          sx={{ pl: 1, pr: 1 }}
+          sx={{ pl: 1, pr: 1, mt: 0.5 }}
         >
           <Grid item>
             <Card sx={{ width: 250, textAlign: "center" }}>
@@ -47,7 +47,7 @@ export default function RecipeReviewCard() {
             </Card>
           </Grid>
         </Grid>
-        <Typography variant="h4" component="h1" align="center" marginTop={0.5}>
+        <Typography variant="h5" align="center" marginTop={2}>
           PhD Students
         </Typography>
         <Grid
@@ -56,6 +56,7 @@ export default function RecipeReviewCard() {
           justifyContent="center"
           alignItems="center"
           spacing={2}
+          sx={{ pl: 1, pr: 1, mt: 0 }}
         >
           <Grid item>
             <Card sx={{ width: 250, textAlign: "center" }}>
@@ -94,7 +95,7 @@ export default function RecipeReviewCard() {
             </Card>
           </Grid>
         </Grid>
-        <Typography variant="h4" component="h1" align="center" marginTop={0.5}>
+        <Typography variant="h5" align="center" marginTop={1.5}>
           Undergraduate / Masters Students
         </Typography>
         <Grid
@@ -103,6 +104,7 @@ export default function RecipeReviewCard() {
           justifyContent="center"
           alignItems="center"
           spacing={2}
+          sx={{ pl: 1, pr: 1, mt: 0 }}
         >
           <Grid item>
             <Card sx={{ width: 250, textAlign: "center" }}>

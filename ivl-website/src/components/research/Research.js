@@ -34,7 +34,7 @@ function Research() {
         }}
       > */}
       <div className="center">
-        <Typography variant="h4" component="h1" align="center" marginTop={0.5}>
+        <Typography variant="h5" align="center" marginTop={1.5}>
           Publications
         </Typography>
       </div>

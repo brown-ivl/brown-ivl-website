@@ -76,3 +76,11 @@ a, u {
     margin-top: -10px;
     margin-bottom: 10px;
  }
+
+ .dp {
+    width: 50%;
+    height: 90%; 
+    border-radius: 50%;
+    /* box-shadow: 1px 1px; */
+    margin-left: 90px;
+}

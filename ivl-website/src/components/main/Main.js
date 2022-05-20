@@ -7,7 +7,7 @@ import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
 import Collapsible from "react-collapsible";
 import Box from "@mui/material/Box";
 
-import Headshot from "../../images/portraits/srinath.jpg";
+import Images from "../../json/home/Images.json";
 import HomePage from "../../md/main/HomePage.md";
 import parseContent from "../../utils/MarkdownParsing";
 import "./Main.css";
@@ -44,7 +44,7 @@ const Main = () => {
                 />
               </Box>
               {/* <EmailIcon sx={{ ml: 2 }} className="inline-icon"></EmailIcon> */}
-              <Box sx={{ ml: 2, display: "flex", mt: -1 }}>
+              <Box sx={{ ml: 2, display: "flex", mt: -1.5 }}>
                 <EmailRoundedIcon className="inline-icon"></EmailRoundedIcon>
                 <ReactMarkdown
                   children={contentMap["Email"]}
@@ -52,7 +52,7 @@ const Main = () => {
                   className="inline-email"
                 />
               </Box>
-              <Typography variant="subtitle2" sx={{ ml: 2, mt: 0 }}>
+              <Typography variant="subtitle2" sx={{ ml: 2, mt: 4 }}>
                 <ReactMarkdown
                   children={contentMap["Address"]}
                   linkTarget="_blank"
@@ -62,9 +62,11 @@ const Main = () => {
             </div>
           </Grid>
           <Grid item xs={4}>
-            {/* <div className="fill">
-              <img className="logo" src={Headshot} alt="Brown Logo" />
-            </div> */}
+            <img
+              className="dp"
+              src={Images.filter((image) => image.name === "headshot")[0].path}
+              alt={Images.filter((image) => image.name === "headshot")[0].alt}
+            />
           </Grid>
         </Grid>
       </Paper>
@@ -79,16 +81,18 @@ const Main = () => {
         }}
       >
         <Grid container spacing={2}>
-          <Grid item xs={4}>
+          {/* <Grid item xs={4}>
             <div className="fill">
               <img
                 className="headshot"
-                src={Headshot}
-                alt="Srinath Profile Pic"
+                src={
+                  Images.filter((image) => image.name === "headshot")[0].path
+                }
+                alt={Images.filter((image) => image.name === "headshot")[0].alt}
               />
             </div>
-          </Grid>
-          <Grid item xs={8}>
+          </Grid> */}
+          <Grid item xs={12}>
             <Box sx={{ ml: 0.5, mr: 0.5, mt: -1 }}>
               <ReactMarkdown
                 children={contentMap["About"]}
