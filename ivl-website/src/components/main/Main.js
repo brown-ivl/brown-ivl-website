@@ -47,7 +47,14 @@ const Main = () => {
                   className="format-name"
                 />
               </Box>
-              <Box sx={{ ml: 2, display: "flex", mt: -1.5 }}>
+              <Box sx={{ ml: 2, mt: -6 }}>
+                <ReactMarkdown
+                  children={contentMap["Title"]}
+                  linkTarget="_blank"
+                  className="format-title"
+                />
+              </Box>
+              <Box sx={{ ml: 2, display: "flex", mt: 4 }}>
                 <EmailRoundedIcon className="inline-icon"></EmailRoundedIcon>
                 <ReactMarkdown
                   children={contentMap["Email"]}
@@ -55,13 +62,13 @@ const Main = () => {
                   className="inline-email"
                 />
               </Box>
-              <Typography variant="subtitle2" sx={{ ml: 2, mt: 8 }}>
+              <Box sx={{ ml: 2, mt: 6 }}>
                 <ReactMarkdown
                   children={contentMap["Address"]}
                   linkTarget="_blank"
-                  className="align-address"
+                  className="format-address"
                 />
-              </Typography>
+              </Box>
             </div>
           </Grid>
           <Grid item xs={4}>

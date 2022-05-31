@@ -1,12 +1,16 @@
 .format-name {
     font-size: 40px;
     font-weight: bold;
-    margin-top: -50px;
+    margin-top: -45px;
 }
+
+.format-title {
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
 .inline-icon {
-    /* vertical-align: bottom;
-    font-size: 18px !important;
-    */
     margin-top: -29px;
  }
 
@@ -14,11 +18,10 @@
     margin-top: -48px;
     font-size: 18px !important;
     margin-left: 2px;
-    /* color: #820000; */
  }
 
- .align-address {
-     margin-top: -20px;
+ .format-address {
+    font-size: 15px;
  }
 
  .logo {
@@ -53,12 +56,6 @@
     margin-bottom: 20px;
 }
 
-/* .fill img {
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%
-} */
-
 a, u {
     text-decoration: none;
     color: #820000;
@@ -74,10 +71,10 @@ a, u {
  }
 
  .dp {
-    width: 55%;
+    width: 60%;
     height: 93%; 
     border-radius: 50%;
-    margin-left: 110px;
+    margin-left: 100px;
 }
 
 @media screen and (max-width: 800px) { 
