@@ -95,9 +95,14 @@ const Main = () => {
             </div>
           </Grid> */}
           <Grid item xs={12}>
-            <Box sx={{ ml: 0.5, mr: 0.5, mt: -1 }}>
+            <Box sx={{ pl: 1, pr: 1, mt: -2.5 }}>
               <ReactMarkdown
                 children={contentMap["About"]}
+                linkTarget="_blank"
+              />
+
+              <ReactMarkdown
+                children={contentMap["Other Work"]}
                 linkTarget="_blank"
               />
             </Box>
@@ -106,8 +111,11 @@ const Main = () => {
               sx={{
                 height: "auto",
                 bgcolor: "#605770",
+                pl: 1,
+                pr: 1,
+                mt: 1.5,
+                ml: 1,
                 mr: 1,
-                mt: 0.5,
               }}
             >
               <Box sx={{ ml: 0.5, color: "#ffffff", mr: 0.5 }}>
@@ -117,16 +125,6 @@ const Main = () => {
                 />
               </Box>
             </Paper>
-          </Grid>
-        </Grid>
-        <Grid container spacing={1}>
-          <Grid item xs={12}>
-            <Box sx={{ ml: 1.5, mr: 0.5, mt: -2 }}>
-              <ReactMarkdown
-                children={contentMap["Other Work"]}
-                linkTarget="_blank"
-              />
-            </Box>
             <Box textAlign={"center"} sx={{ mt: 1 }}>
               <ReactMarkdown
                 children={contentMap["Links"]}
