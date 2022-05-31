@@ -7,7 +7,7 @@ import PictureAsPdfRoundedIcon from "@mui/icons-material/PictureAsPdfRounded";
 import VideoFileRoundedIcon from "@mui/icons-material/VideoFileRounded";
 import InfoRoundedIcon from "@mui/icons-material/InfoRounded";
 import DashboardRoundedIcon from "@mui/icons-material/DashboardRounded";
-import SchoolIcon from "@mui/icons-material/School";
+import SchoolRoundedIcon from "@mui/icons-material/SchoolRounded";
 
 import ResearchPapers from "../../json/papers/ResearchPapers.json";
 import "./Research.css";
@@ -39,7 +39,7 @@ function Research() {
         </Typography>
       </div>
       <Typography sx={{ ml: -0.5, display: "flex", mt: 0.5, mb: 0.5 }}>
-        <SchoolIcon className="inline-scholar-icon"></SchoolIcon>
+        <SchoolRoundedIcon className="inline-scholar-icon"></SchoolRoundedIcon>
         <Link
           href={"https://scholar.google.com/citations?user=qIvZT74AAAAJ&hl=en"}
           target="_blank"
