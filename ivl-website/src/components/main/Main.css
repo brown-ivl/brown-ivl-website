@@ -59,10 +59,6 @@
     min-height: 100%
 } */
 
-/* @media screen and (max-width: 600px) { 
-    .headshot { display: none; }      
-} */
-
 a, u {
     text-decoration: none;
     color: #820000;
@@ -78,9 +74,12 @@ a, u {
  }
 
  .dp {
-    width: 50%;
-    height: 90%; 
+    width: 55%;
+    height: 93%; 
     border-radius: 50%;
-    /* box-shadow: 1px 1px; */
-    margin-left: 90px;
+    margin-left: 110px;
+}
+
+@media screen and (max-width: 800px) { 
+    .dp { display: none; }      
 }

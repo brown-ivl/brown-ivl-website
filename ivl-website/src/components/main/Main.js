@@ -55,7 +55,7 @@ const Main = () => {
                   className="inline-email"
                 />
               </Box>
-              <Typography variant="subtitle2" sx={{ ml: 2, mt: 4 }}>
+              <Typography variant="subtitle2" sx={{ ml: 2, mt: 8 }}>
                 <ReactMarkdown
                   children={contentMap["Address"]}
                   linkTarget="_blank"

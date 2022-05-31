@@ -29,7 +29,7 @@ const parseContent = (content) => {
   // create an dict with the key as the heading and the value as the content
   const contentMap = convertArrayToMap(arr);
 
-  console.log("convertToMap: ", contentMap);
+  // console.log("convertToMap: ", contentMap);
 
   return contentMap;
 };
