@@ -16,8 +16,6 @@ import HomePage from "../../md/main/HomePage.md";
 import parseContent from "../../utils/MarkdownParsing";
 import "./Main.css";
 
-// test comment for repository transfer to brown-ivl
-
 const Main = () => {
   const [contentMap, setContentMap] = useState({});
 
