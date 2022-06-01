@@ -19,7 +19,7 @@ function Research() {
       uniqueYears.push(record.year);
     }
   });
-  console.log(uniqueYears);
+  // console.log(uniqueYears);
 
   return (
     <div>

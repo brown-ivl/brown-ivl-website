@@ -1,0 +1,72 @@
+[ 
+    {
+        "category": "Principal Investigator",
+        "name": "Srinath Sridhar",
+        "years": ""  , 
+        "imgPath": "/images/people/srinath.png",
+        "alt": "Srinath Profile Picture"        
+    },
+    {
+        "category": "PhD Students",
+        "name": "Kefan (Arthur) Chen",
+        "years": "Jan 2022 - Present",
+        "imgPath": "",
+        "alt": ""
+    },
+    {
+        "category": "PhD Students",
+        "name": "Rao Fu",
+        "years": "2021 - Present",
+        "imgPath": "",
+        "alt": ""
+    },
+    {
+        "category": "Undergraduate/Master's Students",
+        "name": "Sijie Ding",
+        "years": "2021 - Present",
+        "imgPath": "",
+        "alt": ""       
+    },
+    {
+        "category": "Undergraduate/Master's Students",
+        "name": "Siddharth Diwan",
+        "years": "2021 - Present",
+        "imgPath": "",
+        "alt": ""  
+    },
+    {
+        "category": "Undergraduate/Master's Students",
+        "name": "Trevor Houchens",
+        "years": "2021 - Present",
+        "imgPath": "",
+        "alt": ""    
+    },
+    {
+        "category": "Undergraduate/Master's Students",
+        "name": "Qiuhong (Anna) Wei",
+        "years": "2021 - Present",
+        "imgPath": "",
+        "alt": ""   
+    },
+    {
+        "category": "Undergraduate/Master's Students",
+        "name": "Yiheng Xie",
+        "years": "2021 - Present",
+        "imgPath": "",
+        "alt": ""
+    },
+    {
+        "category": "Visitors",
+        "name": "Jivitesh Jain",
+        "years": "2021 - Present",
+        "imgPath": "",
+        "alt": ""        
+    },
+    {
+        "category": "Visitors",
+        "name": "Rahul Sajnani",
+        "years": "2020 - Present",
+        "imgPath": "",
+        "alt": ""    
+    }
+]
