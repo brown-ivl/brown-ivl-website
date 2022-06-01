@@ -73,7 +73,7 @@ export default function RecipeReviewCard() {
                               color="textSecondary"
                               component="p"
                             >
-                              {person.Years}
+                              {person.years}
                             </Typography>
                           </CardContent>
                         </Card>
