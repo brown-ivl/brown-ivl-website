@@ -16,19 +16,30 @@ Clone the repository from [here](https://github.com/brown-ivl/brown-ivl-website.
 
 ### Important folder structure is as follows
 
--> ivl-website
-    -> public
-        -> images
-    -> src
-        -> images
-        -> md
-            -> main
-            -> navbar
-        -> components
-        -> papers
-            ResearchPapers.json
-        App.js
+-> ivl-website  
 
+    -> public  
+
+        -> images  
+
+    -> src  
+
+        -> images  
+
+        -> md  
+
+            -> main  
+
+            -> navbar  
+
+        -> components  
+
+        -> papers  
+
+            ResearchPapers.json  
+
+        App.js  
+        
 ## Navbar
 
 ## Homepage
