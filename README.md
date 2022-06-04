@@ -8,17 +8,11 @@ Please refer to this README for instructions on how to populate content and othe
 
 Clone the repository from [here](https://github.com/brown-ivl/brown-ivl-website.git)
 
-'''
-cd ivl-website
-'''
+`cd ivl-website`
 
-'''
-npm i
-'''
+`npm i`
 
-'''
-npm start
-'''
+`npm start`
 
 ### Important folder structure is as follows
 
