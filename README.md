@@ -18,29 +18,29 @@ Clone the repository from [here](https://github.com/brown-ivl/brown-ivl-website.
 
 Hierarchy  
 
--> ivl-website  
+    -> ivl-website  
 
-    -> public  
+        -> public  
 
-        -> images  
+            -> images  
 
-    -> src  
+        -> src  
 
-        -> images  
+            -> images  
 
-        -> md  
+            -> md  
 
-            -> main  
+                -> main  
 
-            -> navbar  
+                -> navbar  
 
-        -> components  
+            -> components  
 
-        -> papers  
+            -> papers  
 
-            ResearchPapers.json  
+                ResearchPapers.json  
 
-        App.js  
+            App.js  
 
 ## Navbar
 
