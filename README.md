@@ -6,9 +6,19 @@ Please refer to this README for instructions on how to populate content and othe
 
 ### Running the app locally
 
+Clone the repository from [here](https://github.com/brown-ivl/brown-ivl-website.git)
+
+'''
 cd ivl-website
+'''
+
+'''
 npm i
+'''
+
+'''
 npm start
+'''
 
 ### Important folder structure is as follows
 
