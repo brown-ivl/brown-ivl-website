@@ -16,6 +16,8 @@ Clone the repository from [here](https://github.com/brown-ivl/brown-ivl-website.
 
 ### Important folder structure is as follows
 
+Hierarchy  
+
 -> ivl-website  
 
     -> public  
@@ -39,7 +41,7 @@ Clone the repository from [here](https://github.com/brown-ivl/brown-ivl-website.
             ResearchPapers.json  
 
         App.js  
-        
+
 ## Navbar
 
 ## Homepage
