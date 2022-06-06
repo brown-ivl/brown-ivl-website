@@ -18,7 +18,7 @@ import People from "./components/people/People";
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <React.Fragment>
         <CssBaseline />
         <MainNav />
@@ -33,7 +33,7 @@ function App() {
           </Box>
         </Container>
       </React.Fragment>
-    </Router>
+    </HashRouter>
   );
 }
 
