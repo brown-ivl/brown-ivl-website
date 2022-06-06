@@ -17,6 +17,7 @@ import IvlHome from "./components/ivlhome/IvlHome";
 import People from "./components/people/People";
 
 function App() {
+  console.log(process.env.PUBLIC_URL);
   return (
     <HashRouter>
       <React.Fragment>
@@ -25,10 +26,10 @@ function App() {
         <Container maxWidth="lg">
           <Box sx={{ bgcolor: "#FFFFFF", height: "100vh" }}>
             <Routes>
-              <Route path="/" element={<Main />}></Route>
-              <Route path="/research" element={<Research />}></Route>
-              <Route path="/ivlhome" element={<IvlHome />}></Route>
-              <Route path="/people" element={<People />}></Route>
+              <Route exact path="/" element={<Main />}></Route>
+              <Route exact path="/research" element={<Research />}></Route>
+              <Route exact path="/ivlhome" element={<IvlHome />}></Route>
+              <Route exact path="/people" element={<People />}></Route>
             </Routes>
           </Box>
         </Container>

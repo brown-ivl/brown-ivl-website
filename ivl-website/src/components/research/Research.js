@@ -68,7 +68,7 @@ function Research() {
                 // image for paper
                 var img = record.image;
                 if (img === "") {
-                  img = "/images/papers/default.png";
+                  img = "images/papers/default.png";
                 } else {
                   img = record.image;
                 }

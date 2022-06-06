@@ -1,7 +1,7 @@
 [ 
     {
         "name": "logo",
-        "path": "/images/logos/brown.png",
+        "path": "images/logos/brown.png",
         "alt": "Brown University Logo"    
     }
 ]

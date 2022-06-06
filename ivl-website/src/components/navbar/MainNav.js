@@ -38,9 +38,10 @@ const MainNav = () => {
     const pageName = event.currentTarget.innerText.toLowerCase();
 
     if (pageName === "home") {
-      window.location.href = "/";
+      console.log(process.env.PUBLIC_URL);
+      window.location.href = process.env.PUBLIC_URL + "/#";
     } else {
-      window.location.href = `/${pageName}`;
+      window.location.href = process.env.PUBLIC_URL + `/#/${pageName}`;
     }
   };
 

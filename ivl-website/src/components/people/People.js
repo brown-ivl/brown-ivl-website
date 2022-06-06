@@ -46,7 +46,7 @@ export default function RecipeReviewCard() {
                 {People.map((person) => {
                   var imagePath = person.imgPath;
                   if (imagePath === "") {
-                    imagePath = "/images/people/default.png";
+                    imagePath = "images/people/default.png";
                   } else {
                     imagePath = person.imgPath;
                   }

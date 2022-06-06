@@ -1,14 +1,14 @@
 [ 
     {
         "name": "Carousel 1",
-        "path": "/images/carousel/stock1.avif"        
+        "path": "images/carousel/stock1.avif"        
     },
     {
         "name": "Carousel 2",
-        "path": "/images/carousel/stock2.avif"        
+        "path": "images/carousel/stock2.avif"        
     },
     {
         "name": "Carousel 3",
-        "path": "/images/carousel/stock3.avif"        
+        "path": "images/carousel/stock3.avif"        
     }
 ]
