@@ -53,12 +53,14 @@ export default function RecipeReviewCard() {
                   if (person.category === category) {
                     return (
                       <Grid item key={person.name}>
-                        <Card sx={{ width: 250, textAlign: "center" }}>
+                        <Card
+                          sx={{ width: 200, height: 320, textAlign: "center" }}
+                        >
                           <CardMedia
                             component="img"
                             image={imagePath}
                             alt={person.alt}
-                            sx={{ width: "100%", height: 250 }}
+                            sx={{ width: "100%", height: 200 }}
                           />
                           <CardContent>
                             <Typography
