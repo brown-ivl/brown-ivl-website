@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/brown-ivl/brown-ivl-website/tree/main/ivl-website/static/css/main.f0d304af.css",
+    "main.js": "/brown-ivl/brown-ivl-website/tree/main/ivl-website/static/js/main.91a08b48.js",
+    "static/js/787.4b3828fd.chunk.js": "/brown-ivl/brown-ivl-website/tree/main/ivl-website/static/js/787.4b3828fd.chunk.js",
+    "static/media/trippy_gif.webp": "/brown-ivl/brown-ivl-website/tree/main/ivl-website/static/media/trippy_gif.b2477fb5e978d03defc8.webp",
+    "static/media/HomePage.md": "/brown-ivl/brown-ivl-website/tree/main/ivl-website/static/media/HomePage.b0945a3d69b5f7ad1120.md",
+    "static/media/Ivl.md": "/brown-ivl/brown-ivl-website/tree/main/ivl-website/static/media/Ivl.a91d552b5440815d984a.md",
+    "index.html": "/brown-ivl/brown-ivl-website/tree/main/ivl-website/index.html",
+    "static/media/Pages.md": "/brown-ivl/brown-ivl-website/tree/main/ivl-website/static/media/Pages.36e9c9475f75361c8815.md",
+    "main.f0d304af.css.map": "/brown-ivl/brown-ivl-website/tree/main/ivl-website/static/css/main.f0d304af.css.map",
+    "main.91a08b48.js.map": "/brown-ivl/brown-ivl-website/tree/main/ivl-website/static/js/main.91a08b48.js.map",
+    "787.4b3828fd.chunk.js.map": "/brown-ivl/brown-ivl-website/tree/main/ivl-website/static/js/787.4b3828fd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f0d304af.css",
+    "static/js/main.91a08b48.js"
+  ]
+}
