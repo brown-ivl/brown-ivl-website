@@ -66,7 +66,7 @@ const MainNav = () => {
               display: { xs: "none", md: "flex" },
               width: "60px",
               height: "60px",
-              ml: -1,
+              ml: 1,
               mr: 1,
             }}
           >
@@ -78,6 +78,7 @@ const MainNav = () => {
             />
           </Box>
 
+          {/* Menu items in compressed view */}
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -120,14 +121,39 @@ const MainNav = () => {
             component="div"
             sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
           >
-            LOGO
+            <Box
+              noWrap
+              component="div"
+              sx={{
+                display: { md: "flex" },
+                width: "60px",
+                height: "60px",
+                ml: 0,
+                mr: 1,
+              }}
+            >
+              <img
+                className="brown-logo"
+                src={Images.filter((image) => image.name === "logo")[0].path}
+                alt={Images.filter((image) => image.name === "logo")[0].alt}
+                onClick={() => navigate("/")}
+              />
+            </Box>
           </Typography>
+
+          {/* Menu items in default view */}
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{
+                  my: 2,
+                  color: "white",
+                  display: "block",
+                  ml: 1,
+                  fontSize: "1rem",
+                }}
               >
                 {page}
               </Button>

@@ -1,5 +1,5 @@
 .format-name {
-    font-size: 40px;
+    font-size: 45px;
     font-weight: bold;
     margin-top: -45px;
 }
@@ -71,10 +71,10 @@ a, u {
  }
 
  .dp {
-    width: 60%;
-    height: 93%; 
+    width: 58%;
+    height: 92%; 
     border-radius: 50%;
-    margin-left: 100px;
+    margin-left: 120px;
 }
 
 @media screen and (max-width: 800px) { 

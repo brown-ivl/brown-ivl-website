@@ -16,9 +16,9 @@ function App() {
     <Router>
       <React.Fragment>
         <CssBaseline />
-        <Container maxWidth="md">
+        <MainNav />
+        <Container maxWidth="lg">
           <Box sx={{ bgcolor: "#FFFFFF", height: "100vh" }}>
-            <MainNav />
             <Routes>
               <Route path="/" element={<Main />}></Route>
               <Route path="/research" element={<Research />}></Route>

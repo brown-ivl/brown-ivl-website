@@ -47,7 +47,7 @@ const Main = () => {
                   className="format-name"
                 />
               </Box>
-              <Box sx={{ ml: 2, mt: -6 }}>
+              <Box sx={{ ml: 2, mt: -6.5 }}>
                 <ReactMarkdown
                   children={contentMap["Title"]}
                   linkTarget="_blank"
@@ -62,7 +62,7 @@ const Main = () => {
                   className="inline-email"
                 />
               </Box>
-              <Box sx={{ ml: 2, mt: 6 }}>
+              <Box sx={{ ml: 2, mt: 7 }}>
                 <ReactMarkdown
                   children={contentMap["Address"]}
                   linkTarget="_blank"
