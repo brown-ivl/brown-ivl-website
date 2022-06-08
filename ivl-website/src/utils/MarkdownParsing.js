@@ -1,10 +1,26 @@
 // Markdown text parsing logic
 const parseContent = (content) => {
-  // split content based on newline and assign to array
+  // split content based on newline + empty line and assign to array
+
+  // macintosh has CR line endings, so we try for it first
   var arr = content.split("\n\n");
+
+  // windows has CR LF line endings, so we need to remove them
+  if (arr.length === 1) {
+    arr = content.split("\r\n\r\n");
+  }
+
+  // UNIX has LF line endings, so we need to remove them
+  if (arr.length === 1) {
+    arr = content.split("\n");
+  }
+
+  console.log(arr.length);
 
   // splice the first element of the array (the comment at the start of md file)
   arr = arr.splice(1, arr.length - 1);
+
+  console.log(arr.length);
 
   // in the array, if the item is empty, splice it out
   arr.forEach(function (item, index, object) {
@@ -12,6 +28,8 @@ const parseContent = (content) => {
       object.splice(index, 1);
     }
   });
+
+  console.log(arr.length);
 
   /* 
       we have to forEach once again as if you write this logic in the above 
@@ -26,16 +44,20 @@ const parseContent = (content) => {
     }
   });
 
+  console.log(arr.length);
+
   // create an dict with the key as the heading and the value as the content
   const contentMap = convertArrayToMap(arr);
 
-  // console.log("convertToMap: ", contentMap);
+  console.log("convertToMap: ", contentMap);
 
   return contentMap;
 };
 
 const convertArrayToMap = (arr) => {
   let r = {};
+
+  console.log(arr.length);
 
   for (let i = 0; i < arr.length; i += 2) {
     let key = arr[i],
