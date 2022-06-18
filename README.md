@@ -32,7 +32,7 @@ The website is currently deployed [here](https://brown-ivl.github.io/brown-ivl-w
 
 In order to deploy new changes to the server, use:
 
-`npm deploy`
+`npm run deploy`
 
 ### Important folder structure to know is as follows
 
