@@ -17,7 +17,6 @@ import IvlHome from "./components/ivlhome/IvlHome";
 import People from "./components/people/People";
 
 function App() {
-  console.log(process.env.PUBLIC_URL);
   return (
     <HashRouter>
       <React.Fragment>

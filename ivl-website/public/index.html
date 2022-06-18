@@ -39,5 +39,27 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      fetch("%PUBLIC_URL%/config.json")
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (data) {
+          console.log(JSON.stringify(data))
+          setTitle(data);
+        })
+        .catch(function (err) {
+          console.log(err);
+       });
+       
+       function setTitle(data) {
+        for (var i = 0; i < data.length; i++) {
+          if (data[i].property == "Webpage Title") {
+            document.title = data[i].title;
+            document.querySelector('meta[name="description"]').setAttribute("content", data[i].description);
+          }        
+        }
+       } 
+    </script>
   </body>
 </html>
