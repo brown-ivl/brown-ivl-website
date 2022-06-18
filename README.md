@@ -16,6 +16,24 @@ You must have node installed. Download from [here](https://nodejs.org/en/downloa
 
 `npm start`
 
+### Pushing changes to repo
+
+To push changes from local to the remote repository:
+
+`git add .`
+
+`git commit -m "some message"`
+
+`git push origin`
+
+### Deploying Changes
+
+The website is currently deployed [here](https://brown-ivl.github.io/brown-ivl-website/#)
+
+In order to deploy new changes to the server, use:
+
+`npm deploy`
+
 ### Important folder structure to know is as follows
 
     -> ivl-website  
@@ -23,6 +41,7 @@ You must have node installed. Download from [here](https://nodejs.org/en/downloa
         -> public  
 
             -> images (Add all images here in the appropriate subfolder)  
+            -> config.json (Contains all the configuration information for the website)  
 
         -> src  
 
@@ -55,6 +74,8 @@ You must have node installed. Download from [here](https://nodejs.org/en/downloa
             -> App.js (Entry component for the app)  
 
             -> index.js (Entry point for the app)  
+
+            -> package.son (Contains installed package information and command aliases)  
 
 ## Navbar
 
