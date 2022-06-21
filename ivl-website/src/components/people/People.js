@@ -24,6 +24,7 @@ export default function RecipeReviewCard() {
         sx={{
           pt: 1,
           mt: 1,
+          pb: 1,
           height: "auto",
           bgcolor: "#F7F6F2",
         }}

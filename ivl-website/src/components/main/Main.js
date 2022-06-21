@@ -28,68 +28,73 @@ const Main = () => {
 
   return (
     <div>
-      <Paper
-        elevation={3}
-        sx={{
-          pt: 1,
-          mt: 1,
-          height: "auto",
-          bgcolor: "#F7F6F2",
-        }}
-      >
-        <Grid container spacing={2}>
-          <Grid item xs={8}>
-            <div>
-              <Box sx={{ ml: 2 }}>
-                <ReactMarkdown
-                  children={contentMap["Name"]}
-                  linkTarget="_blank"
-                  className="format-name"
-                />
-              </Box>
-              <Box sx={{ ml: 2, mt: -6.5 }}>
-                <ReactMarkdown
-                  children={contentMap["Title"]}
-                  linkTarget="_blank"
-                  className="format-title"
-                />
-              </Box>
-              <Box sx={{ ml: 2, display: "flex", mt: 4 }}>
-                <EmailRoundedIcon className="inline-icon"></EmailRoundedIcon>
-                <ReactMarkdown
-                  children={contentMap["Email"]}
-                  linkTarget="_blank"
-                  className="inline-email"
-                />
-              </Box>
-              <Box sx={{ ml: 2, mt: 7 }}>
-                <ReactMarkdown
-                  children={contentMap["Address"]}
-                  linkTarget="_blank"
-                  className="format-address"
-                />
-              </Box>
-            </div>
+      <Box sx={{ mt: 1, pb: 1, height: "auto" }}>
+        <Paper
+          elevation={3}
+          sx={{
+            pt: 1,
+            mt: 1,
+            mb: 2,
+            height: "auto",
+            bgcolor: "#FFFFFF",
+          }}
+        >
+          <Grid container spacing={2}>
+            <Grid item xs={8}>
+              <div>
+                <Box sx={{ ml: 2 }}>
+                  <ReactMarkdown
+                    children={contentMap["Name"]}
+                    linkTarget="_blank"
+                    className="format-name"
+                  />
+                </Box>
+                <Box sx={{ ml: 2, mt: -6.5 }}>
+                  <ReactMarkdown
+                    children={contentMap["Title"]}
+                    linkTarget="_blank"
+                    className="format-title"
+                  />
+                </Box>
+                <Box sx={{ ml: 2, display: "flex", mt: 4 }}>
+                  <EmailRoundedIcon className="inline-icon"></EmailRoundedIcon>
+                  <ReactMarkdown
+                    children={contentMap["Email"]}
+                    linkTarget="_blank"
+                    className="inline-email"
+                  />
+                </Box>
+                <Box sx={{ ml: 2, mt: 7 }}>
+                  <ReactMarkdown
+                    children={contentMap["Address"]}
+                    linkTarget="_blank"
+                    className="format-address"
+                  />
+                </Box>
+              </div>
+            </Grid>
+            <Grid item xs={4}>
+              <img
+                className="dp"
+                src={
+                  Images.filter((image) => image.name === "headshot")[0].path
+                }
+                alt={Images.filter((image) => image.name === "headshot")[0].alt}
+              />
+            </Grid>
           </Grid>
-          <Grid item xs={4}>
-            <img
-              className="dp"
-              src={Images.filter((image) => image.name === "headshot")[0].path}
-              alt={Images.filter((image) => image.name === "headshot")[0].alt}
-            />
-          </Grid>
-        </Grid>
-      </Paper>
+        </Paper>
 
-      <Paper
+        {/* <Paper
         elevation={3}
         sx={{
           height: "auto",
+          minHeight: "100%",
           bgcolor: "#F7F6F2",
           pd: 1,
           mt: 3,
         }}
-      >
+      >  */}
         <Grid container spacing={2}>
           <Grid item xs={12}>
             <Box sx={{ pl: 1, pr: 1, mt: -2.5 }}>
@@ -182,6 +187,7 @@ const Main = () => {
                     left: 0,
                     behavior: "smooth",
                   });
+                  document.body.classList.add("no-scroll");
                 }}
               >
                 <ReactMarkdown
@@ -192,7 +198,8 @@ const Main = () => {
             </Box>
           </Grid>
         </Grid>
-      </Paper>
+        {/* </Paper> */}
+      </Box>
     </div>
   );
 };

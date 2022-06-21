@@ -13,3 +13,9 @@
 #root {
   background-color: #FFFFFF;
 }
+
+.parent-box {
+  /* min-height: calc(100vh - 60px); */
+  min-height: auto;
+  padding-bottom: 5px;
+}

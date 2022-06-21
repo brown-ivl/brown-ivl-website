@@ -72,6 +72,26 @@ function Research() {
                 } else {
                   img = record.image;
                 }
+
+                // display pdf option only if pdf field is not empty in json
+                let pdf;
+                if (record.pdf !== "") {
+                  pdf = (
+                    <>
+                      <PictureAsPdfRoundedIcon className="inline-pdf"></PictureAsPdfRoundedIcon>
+                      <Link
+                        href={record.pdf}
+                        target="_blank"
+                        color="#820000"
+                        underline="none"
+                      >
+                        PDF
+                      </Link>
+                    </>
+                  );
+                } else {
+                  pdf = "";
+                }
                 return (
                   <div>
                     <Paper
@@ -83,7 +103,8 @@ function Research() {
                         bgcolor: "#F7F6F2",
                         ml: 1,
                         mr: 1,
-                        minHeight: "20vh",
+                        pb: 1,
+                        minHeight: "15vh",
                       }}
                     >
                       <Grid container spacing={2}>
@@ -112,9 +133,9 @@ function Research() {
                             <b>{record.journal}</b>
                           </Typography>
                           <Typography
-                            sx={{ ml: 2, display: "flex", mt: 0.5, mb: 0.5 }}
+                            sx={{ ml: 2, display: "flex", mt: 1.5, mb: 0.5 }}
                           >
-                            <PictureAsPdfRoundedIcon className="inline-pdf"></PictureAsPdfRoundedIcon>
+                            {/* <PictureAsPdfRoundedIcon className="inline-pdf"></PictureAsPdfRoundedIcon>
                             <Link
                               href={record.pdf}
                               target="_blank"
@@ -122,7 +143,8 @@ function Research() {
                               underline="none"
                             >
                               PDF
-                            </Link>
+                            </Link> */}
+                            {pdf}
                             <VideoFileRoundedIcon className="inline-video"></VideoFileRoundedIcon>
                             <Link
                               href={record.video}
