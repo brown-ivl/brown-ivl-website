@@ -23,8 +23,8 @@ export default function RecipeReviewCard() {
         elevation={3}
         sx={{
           pt: 1,
-          mt: 1,
           pb: 1,
+          m: 1,
           height: "auto",
           bgcolor: "#F7F6F2",
         }}
