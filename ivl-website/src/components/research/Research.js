@@ -74,7 +74,7 @@ function Research() {
                 }
 
                 // display pdf option only if pdf field is not empty in json
-                let pdf;
+                let pdf, video, moreInfo, projectPage;
                 if (record.pdf !== "") {
                   pdf = (
                     <>
@@ -92,19 +92,68 @@ function Research() {
                 } else {
                   pdf = "";
                 }
+                if (record.video !== "") {
+                  video = (
+                    <>
+                      <VideoFileRoundedIcon className="inline-video"></VideoFileRoundedIcon>
+                      <Link
+                        href={record.video}
+                        target="_blank"
+                        color="#820000"
+                        underline="none"
+                      >
+                        Video
+                      </Link>
+                    </>
+                  );
+                } else {
+                  video = "";
+                }
+                if (record.moreInfo !== "") {
+                  moreInfo = (
+                    <>
+                      <InfoRoundedIcon className="inline-info"></InfoRoundedIcon>
+                      <Link
+                        href={record.moreInfo}
+                        target="_blank"
+                        color="#820000"
+                        underline="none"
+                      >
+                        More Info
+                      </Link>
+                    </>
+                  );
+                } else {
+                  moreInfo = "";
+                }
+                if (record.projectPage !== "") {
+                  projectPage = (
+                    <>
+                      <DashboardRoundedIcon className="inline-project"></DashboardRoundedIcon>
+                      <Link
+                        href={record.projectPage}
+                        target="_blank"
+                        color="#820000"
+                        underline="none"
+                      >
+                        Project Page
+                      </Link>
+                    </>
+                  );
+                } else {
+                  projectPage = "";
+                }
                 return (
                   <div>
                     <Paper
                       elevation={3}
                       sx={{
                         pt: 1,
-                        mt: 1,
                         height: "auto",
                         bgcolor: "#F7F6F2",
-                        ml: 1,
-                        mr: 1,
                         pb: 1,
                         minHeight: "15vh",
+                        m: 1,
                       }}
                     >
                       <Grid container spacing={2}>
@@ -135,43 +184,10 @@ function Research() {
                           <Typography
                             sx={{ ml: 2, display: "flex", mt: 1.5, mb: 0.5 }}
                           >
-                            {/* <PictureAsPdfRoundedIcon className="inline-pdf"></PictureAsPdfRoundedIcon>
-                            <Link
-                              href={record.pdf}
-                              target="_blank"
-                              color="#820000"
-                              underline="none"
-                            >
-                              PDF
-                            </Link> */}
                             {pdf}
-                            <VideoFileRoundedIcon className="inline-video"></VideoFileRoundedIcon>
-                            <Link
-                              href={record.video}
-                              target="_blank"
-                              color="#820000"
-                              underline="none"
-                            >
-                              Video
-                            </Link>
-                            <InfoRoundedIcon className="inline-info"></InfoRoundedIcon>
-                            <Link
-                              href={record.moreInfo}
-                              target="_blank"
-                              color="#820000"
-                              underline="none"
-                            >
-                              More Info
-                            </Link>
-                            <DashboardRoundedIcon className="inline-project"></DashboardRoundedIcon>
-                            <Link
-                              href={record.projectPage}
-                              target="_blank"
-                              color="#820000"
-                              underline="none"
-                            >
-                              Project Page
-                            </Link>
+                            {video}
+                            {moreInfo}
+                            {projectPage}
                           </Typography>
                         </Grid>
                       </Grid>

@@ -43,10 +43,11 @@ function IvlHome() {
       <Paper
         elevation={3}
         sx={{
-          pt: 1,
           mt: 1,
           height: "auto",
+          minHeight: "100%",
           bgcolor: "#F7F6F2",
+          mb: 1,
         }}
       >
         <Grid

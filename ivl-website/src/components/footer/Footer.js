@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
@@ -8,6 +8,19 @@ import Typography from "@mui/material/Typography";
 import "./Footer.css";
 
 function Footer() {
+  const [time, setTime] = useState("");
+
+  useEffect(() => {
+    let today = new Date();
+    let date =
+      today.getFullYear() +
+      "-" +
+      (today.getMonth() + 1) +
+      "-" +
+      today.getDate();
+    setTime(date);
+  }, []);
+
   return (
     <div>
       <AppBar position="static" sx={{ bgcolor: "#605770" }}>
@@ -30,7 +43,7 @@ function Footer() {
                 component="div"
                 sx={{ flexGrow: 1 }}
               >
-                This website was last updated on: 2020-06-01
+                This website was last updated on: {time}
               </Typography>
             </Box>
           </Toolbar>

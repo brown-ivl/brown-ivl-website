@@ -36,7 +36,7 @@ const Main = () => {
             mt: 1,
             mb: 2,
             height: "auto",
-            bgcolor: "#FFFFFF",
+            bgcolor: "#F7F6F2",
           }}
         >
           <Grid container spacing={2}>
@@ -85,120 +85,119 @@ const Main = () => {
           </Grid>
         </Paper>
 
-        {/* <Paper
-        elevation={3}
-        sx={{
-          height: "auto",
-          minHeight: "100%",
-          bgcolor: "#F7F6F2",
-          pd: 1,
-          mt: 3,
-        }}
-      >  */}
-        <Grid container spacing={2}>
-          <Grid item xs={12}>
-            <Box sx={{ pl: 1, pr: 1, mt: -2.5 }}>
-              <ReactMarkdown
-                children={contentMap["About"]}
-                linkTarget="_blank"
-              />
+        <Paper
+          elevation={3}
+          sx={{
+            height: "auto",
+            minHeight: "100%",
+            bgcolor: "#F7F6F2",
+            mt: 3,
+          }}
+        >
+          <Grid container spacing={2}>
+            <Grid item xs={12}>
+              <Box sx={{ pl: 1, pr: 1, mt: -2.5 }}>
+                <ReactMarkdown
+                  children={contentMap["About"]}
+                  linkTarget="_blank"
+                />
 
-              <ReactMarkdown
-                children={contentMap["Other Work"]}
-                linkTarget="_blank"
-              />
-            </Box>
-            <Paper
-              elevation={3}
-              sx={{
-                height: "auto",
-                bgcolor: "#605770",
-                pl: 1,
-                pr: 1,
-                mt: 1.5,
-                ml: 1,
-                mr: 1,
-              }}
-            >
-              <Box sx={{ ml: 0.5, color: "#ffffff", mr: 0.5 }}>
                 <ReactMarkdown
-                  children={contentMap["Prospective Students"]}
+                  children={contentMap["Other Work"]}
                   linkTarget="_blank"
                 />
               </Box>
-            </Paper>
-            <Box
-              display="flex"
-              justifyContent="center"
-              alignItems="center"
-              sx={{ mt: -1 }}
-            >
-              <Box display="flex">
-                <ArticleRoundedIcon
-                  sx={{ mt: 2, mr: 0.2 }}
-                ></ArticleRoundedIcon>
-                <ReactMarkdown
-                  children={contentMap["CV"]}
-                  linkTarget="_blank"
-                />
-                <SchoolRoundedIcon
-                  sx={{ mt: 2, ml: 1, mr: 0.2 }}
-                ></SchoolRoundedIcon>
-                <ReactMarkdown
-                  children={contentMap["Scholar"]}
-                  linkTarget="_blank"
-                />
-                <CodeRoundedIcon
-                  sx={{ mt: 2, ml: 1, mr: 0.2 }}
-                ></CodeRoundedIcon>
-                <ReactMarkdown
-                  children={contentMap["GitHub"]}
-                  linkTarget="_blank"
-                />
-                <MessageRoundedIcon
-                  sx={{ mt: 2, ml: 1, mr: 0.2 }}
-                ></MessageRoundedIcon>
-                <ReactMarkdown
-                  children={contentMap["Twitter"]}
-                  linkTarget="_blank"
-                />
-              </Box>
-            </Box>
-          </Grid>
-        </Grid>
-        <Grid container spacing={1}>
-          <Grid item xs={12}>
-            <Typography variant="h6" sx={{ ml: 1.5, mt: 0.5 }}>
-              {" "}
-              Updates
-            </Typography>
-            <Box sx={{ ml: 1.5, mr: 0.5 }}>
-              <ReactMarkdown
-                children={contentMap["Updates"]}
-                linkTarget="_blank"
-              />
-              <Collapsible
-                trigger="Show More"
-                className="collapsible-div"
-                triggerWhenOpen="Show Less"
-                onOpen={() => {
-                  window.scroll({
-                    top: document.body.offsetHeight,
-                    left: 0,
-                    behavior: "smooth",
-                  });
-                  document.body.classList.add("no-scroll");
+              <Paper
+                elevation={3}
+                sx={{
+                  height: "auto",
+                  bgcolor: "#605770",
+                  pl: 1,
+                  pr: 1,
+                  mt: 1.5,
+                  ml: 1,
+                  mr: 1,
                 }}
               >
+                <Box sx={{ ml: 0.5, color: "#ffffff", mr: 0.5 }}>
+                  <ReactMarkdown
+                    children={contentMap["Prospective Students"]}
+                    linkTarget="_blank"
+                  />
+                </Box>
+              </Paper>
+              <Box
+                display="flex"
+                justifyContent="center"
+                alignItems="center"
+                sx={{ mt: -1 }}
+              >
+                <Box display="flex">
+                  <ArticleRoundedIcon
+                    sx={{ mt: 2, mr: 0.2 }}
+                  ></ArticleRoundedIcon>
+                  <ReactMarkdown
+                    children={contentMap["CV"]}
+                    linkTarget="_blank"
+                  />
+                  <SchoolRoundedIcon
+                    sx={{ mt: 2, ml: 1, mr: 0.2 }}
+                  ></SchoolRoundedIcon>
+                  <ReactMarkdown
+                    children={contentMap["Scholar"]}
+                    linkTarget="_blank"
+                  />
+                  <CodeRoundedIcon
+                    sx={{ mt: 2, ml: 1, mr: 0.2 }}
+                  ></CodeRoundedIcon>
+                  <ReactMarkdown
+                    children={contentMap["GitHub"]}
+                    linkTarget="_blank"
+                  />
+                  <MessageRoundedIcon
+                    sx={{ mt: 2, ml: 1, mr: 0.2 }}
+                  ></MessageRoundedIcon>
+                  <ReactMarkdown
+                    children={contentMap["Twitter"]}
+                    linkTarget="_blank"
+                  />
+                </Box>
+              </Box>
+            </Grid>
+          </Grid>
+          <Grid container spacing={1}>
+            <Grid item xs={12}>
+              <Typography variant="h6" sx={{ ml: 1.5, mt: 0.5 }}>
+                {" "}
+                Updates
+              </Typography>
+              <Box sx={{ ml: 1.5, mr: 0.5 }}>
                 <ReactMarkdown
-                  children={contentMap["Collapsible Updates"]}
+                  children={contentMap["Updates"]}
                   linkTarget="_blank"
                 />
-              </Collapsible>
-            </Box>
+                <Collapsible
+                  trigger="Show More"
+                  className="collapsible-div"
+                  triggerWhenOpen="Show Less"
+                  onOpen={() => {
+                    window.scroll({
+                      top: document.body.offsetHeight,
+                      left: 0,
+                      behavior: "smooth",
+                    });
+                    document.body.classList.add("no-scroll");
+                  }}
+                >
+                  <ReactMarkdown
+                    children={contentMap["Collapsible Updates"]}
+                    linkTarget="_blank"
+                  />
+                </Collapsible>
+              </Box>
+            </Grid>
           </Grid>
-        </Grid>
-        {/* </Paper> */}
+        </Paper>
       </Box>
     </div>
   );
