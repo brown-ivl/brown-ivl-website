@@ -15,16 +15,16 @@ import Main from "./components/main/Main";
 import Research from "./components/research/Research";
 import IvlHome from "./components/ivlhome/IvlHome";
 import People from "./components/people/People";
+import Footer from "./components/footer/Footer";
 
 function App() {
-  console.log(process.env.PUBLIC_URL);
   return (
     <HashRouter>
       <React.Fragment>
         <CssBaseline />
         <MainNav />
         <Container maxWidth="lg">
-          <Box sx={{ bgcolor: "#FFFFFF", height: "100vh" }}>
+          <Box sx={{ bgcolor: "#FFFFFF" }} className="parent-box">
             <Routes>
               <Route exact path="/" element={<Main />}></Route>
               <Route exact path="/research" element={<Research />}></Route>
@@ -33,6 +33,7 @@ function App() {
             </Routes>
           </Box>
         </Container>
+        <Footer />
       </React.Fragment>
     </HashRouter>
   );

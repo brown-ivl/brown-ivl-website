@@ -70,11 +70,16 @@ a, u {
     margin-bottom: 10px;
  }
 
+ .Collapsible:hover {
+    cursor: pointer;
+ }
+
  .dp {
     width: 58%;
     height: 92%; 
     border-radius: 50%;
     margin-left: 120px;
+    object-fit: cover;
 }
 
 @media screen and (max-width: 800px) { 
