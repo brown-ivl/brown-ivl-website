@@ -1,4 +1,4 @@
-[//]: # (READ CAREFULLY!!! This markdown is used to populate the IVL Home page. Please ensure that there is an EMPTY LINE between the different SECTIONS as well as between the section header and content. Ensure that a section's content follows a level 1 heading '#' as this will act as the 'key' to that section's content in the code. Add any additional information to this comment ONLY. DO NOT ADD ANY NEW COMMENTS TO THIS PAGE.)
+[//]: # (READ CAREFULLY!!! This markdown is used to populate the Home page. Please ensure that there is an EMPTY LINE between the different SECTIONS as well as between the section header and content. Ensure that a section's content follows a level 1 heading '#' as this will act as the 'key' to that section's content in the code. Add any additional information to this comment ONLY. DO NOT ADD ANY NEW COMMENTS TO THIS PAGE.)
 
 # Title
 
