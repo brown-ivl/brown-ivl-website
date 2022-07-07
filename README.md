@@ -45,7 +45,7 @@ To view the deployment process, click [here](https://github.com/brown-ivl/brown-
         -> public  
 
             -> images (Add all images here in the appropriate subfolder)  
-            -> config.json (Contains all the configuration information for the website)  
+            -> parentConfig.json (Contains all the configuration information for the website on a global level)  
 
         -> src  
 
@@ -59,7 +59,9 @@ To view the deployment process, click [here](https://github.com/brown-ivl/brown-
 
             -> components (Holds javascript code for various pages)  
 
-            -> json (Add all json content here in the appropriate folder)   
+            -> json (Add all json content here in the appropriate folder)  
+
+                -> configs  
 
                 -> home  
 
@@ -81,13 +83,25 @@ To view the deployment process, click [here](https://github.com/brown-ivl/brown-
 
             -> package.son (Contains installed package information and command aliases)  
 
-## Page-wise Information
+## Component-wise Information
+
+### Carousel
+
+The code for the Carousel is located in the `src/components/carousel` folder.
+
+Its functionality is to render the Carousel for the IVL homepage. Information is passed via props to Item.js.
+
+### Footer
+
+The code for the Footer is located in the `src/components/footer` folder.
+
+The Last Updated Time is pulled from json/configs/ComponentConfig.json. The Last Updated Time is displayed in the footer. **Change the value before deploying**
 
 ### Navbar
 
 The code for the Navbar is located in the `src/components/navbar` folder.
 
-To add or remove pages from the Navbar, edit the file `src/md/navbar/Pages.md`.The file contains a list of pages that will be displayed in the Navbar. The pages need to be separated by a newline.
+To add or remove pages from the Navbar, edit the file `src/md/navbar/Pages.md`. The file contains a list of pages that will be displayed in the Navbar. The pages need to be separated by a newline.
 
 Logos are located in the `public/images/logos` folder.
 

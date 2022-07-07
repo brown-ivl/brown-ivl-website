@@ -6,6 +6,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 
 import "./Footer.css";
+import Config from "../../json/configs/ComponentConfig.json";
 
 function Footer() {
   const [time, setTime] = useState("");
@@ -43,7 +44,8 @@ function Footer() {
                 component="div"
                 sx={{ flexGrow: 1 }}
               >
-                This website was last updated on: {time}
+                This website was last updated on:{" "}
+                {Config.filter((item) => item.key === "Last Updated")[0].value}
               </Typography>
             </Box>
           </Toolbar>
