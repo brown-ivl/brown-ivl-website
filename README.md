@@ -81,7 +81,7 @@ To view the deployment process, click [here](https://github.com/brown-ivl/brown-
 
             -> index.js (Entry point for the app)  
 
-            -> package.son (Contains installed package information and command aliases)  
+        -> package.json (Contains installed package information and command aliases)  
 
 ## Component-wise Information
 
