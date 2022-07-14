@@ -33,7 +33,7 @@ export default function RecipeReviewCard() {
           return (
             <div key={category}>
               <div className="center">
-                <Typography variant="h5" align="center" marginTop={1.5}>
+                <Typography variant="h5" align="center" marginTop={2}>
                   {category}
                 </Typography>
               </div>
