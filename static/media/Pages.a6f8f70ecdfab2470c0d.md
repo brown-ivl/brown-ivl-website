@@ -1,4 +1,3 @@
 Home
-IVLHome
 Research
 People
