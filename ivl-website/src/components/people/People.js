@@ -5,8 +5,10 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
+import Link from "@mui/material/Link";
 
 import People from "../../json/people/People.json";
+import "./People.css";
 
 export default function RecipeReviewCard() {
   var uniqueCategories = [];
@@ -30,63 +32,118 @@ export default function RecipeReviewCard() {
         }}
       >
         {uniqueCategories.map((category) => {
-          return (
-            <div key={category}>
-              <div className="center">
-                <Typography variant="h5" align="center" marginTop={2}>
-                  {category}
-                </Typography>
+          if (category !== "Brown IVL Alumni") {
+            return (
+              <div key={category}>
+                <div className="center">
+                  <Typography variant="h5" align="center" marginTop={2}>
+                    {category}
+                  </Typography>
+                </div>
+                <Grid
+                  container
+                  spacing={1}
+                  alignItems="center"
+                  justifyContent="center"
+                  sx={{ pl: 1, pr: 1, mt: 0.5 }}
+                >
+                  {People.map((person) => {
+                    var imagePath = person.imgPath;
+                    if (imagePath === "") {
+                      imagePath = "images/people/default.png";
+                    } else {
+                      imagePath = person.imgPath;
+                    }
+                    if (person.category === category) {
+                      return (
+                        <Grid item key={person.name}>
+                          <Card
+                            sx={{
+                              width: 200,
+                              height: 310,
+                              textAlign: "center",
+                            }}
+                          >
+                            <CardMedia
+                              component="img"
+                              image={imagePath}
+                              alt={person.alt}
+                              sx={{ width: "100%", height: 200 }}
+                            />
+                            <CardContent>
+                              <Link
+                                href={person.link}
+                                target="_blank"
+                                color="#820000"
+                                underline="none"
+                              >
+                                <Typography variant="h6">
+                                  {person.name}
+                                </Typography>
+                              </Link>
+                              <Typography
+                                variant="body2"
+                                color="textSecondary"
+                                component="p"
+                              >
+                                {person.years}
+                              </Typography>
+                              {person.moreInfo !== "" ? (
+                                <Typography variant="subtitle2" component="p">
+                                  {person.moreInfo}
+                                </Typography>
+                              ) : null}
+                            </CardContent>
+                          </Card>
+                        </Grid>
+                      );
+                    }
+                  })}
+                </Grid>
               </div>
-              <Grid
-                container
-                spacing={1}
-                alignItems="center"
-                justifyContent="center"
-                sx={{ pl: 1, pr: 1, mt: 0.5 }}
-              >
+            );
+          } else {
+            return (
+              <div key={category}>
+                <div className="center">
+                  <Typography variant="h5" align="left" marginTop={2}>
+                    {category}
+                  </Typography>
+                </div>
+
                 {People.map((person) => {
-                  var imagePath = person.imgPath;
-                  if (imagePath === "") {
-                    imagePath = "images/people/default.png";
-                  } else {
-                    imagePath = person.imgPath;
-                  }
                   if (person.category === category) {
                     return (
-                      <Grid item key={person.name}>
-                        <Card
-                          sx={{ width: 200, height: 320, textAlign: "center" }}
-                        >
-                          <CardMedia
-                            component="img"
-                            image={imagePath}
-                            alt={person.alt}
-                            sx={{ width: "100%", height: 200 }}
-                          />
-                          <CardContent>
-                            <Typography
-                              gutterBottom
-                              variant="h5"
-                              component="h2"
-                            >
-                              {person.name}
-                            </Typography>
-                            <Typography
-                              variant="body2"
-                              color="textSecondary"
-                              component="p"
-                            >
-                              {person.years}
-                            </Typography>
-                          </CardContent>
-                        </Card>
-                      </Grid>
+                      <div className="alumni-format-vertical center">
+                        <div className="alumni-format-horizontal center">
+                          <Typography align="left" marginTop={1} marginLeft={2}>
+                            {person.name} ({person.years}) -
+                          </Typography>
+                          <Typography
+                            variant="body1"
+                            color="textSecondary"
+                            component="p"
+                            marginTop={1.2}
+                            marginLeft={0.5}
+                          >
+                            {person.status}
+                          </Typography>
+                        </div>
+                        {person.additionalInfo !== "" ? (
+                          <Typography
+                            variant="subtitle2"
+                            className="format-additionalInfo"
+                          >
+                            {person.additionalInfo}
+                          </Typography>
+                        ) : null}
+                      </div>
                     );
                   }
                 })}
-              </Grid>
-            </div>
-          );
+              </div>
+            );
+          }
         })}
       </Paper>
     </div>

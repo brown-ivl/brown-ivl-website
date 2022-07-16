@@ -3,3 +3,13 @@
     display: flex;
     justify-content: center;
 }
+
+.alumni-format-horizontal {
+    display: flex;
+    flex-direction: row;        
+}
+
+.alumni-format-vertical {
+    display: flex;
+    flex-direction: column;        
+}
