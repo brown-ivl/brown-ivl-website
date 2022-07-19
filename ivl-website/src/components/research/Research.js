@@ -8,6 +8,9 @@ import VideoFileRoundedIcon from "@mui/icons-material/VideoFileRounded";
 import InfoRoundedIcon from "@mui/icons-material/InfoRounded";
 import DashboardRoundedIcon from "@mui/icons-material/DashboardRounded";
 import SchoolRoundedIcon from "@mui/icons-material/SchoolRounded";
+import DataObjectRoundedIcon from "@mui/icons-material/DataObjectRounded";
+import InventoryRoundedIcon from "@mui/icons-material/InventoryRounded";
+import PublishedWithChangesRoundedIcon from "@mui/icons-material/PublishedWithChangesRounded";
 
 import ResearchPapers from "../../json/papers/ResearchPapers.json";
 import "./Research.css";
@@ -91,7 +94,13 @@ function Research() {
                           }
 
                           // display pdf option only if pdf field is not empty in json
-                          let pdf, video, moreInfo, projectPage;
+                          let pdf,
+                            video,
+                            moreInfo,
+                            projectPage,
+                            bibTex,
+                            googlePatents,
+                            pubman;
                           if (record.pdf !== "") {
                             pdf = (
                               <>
@@ -160,6 +169,58 @@ function Research() {
                           } else {
                             projectPage = "";
                           }
+                          if (record.bibTex !== "") {
+                            bibTex = (
+                              <>
+                                <DataObjectRoundedIcon className="inline-bibTex"></DataObjectRoundedIcon>
+                                <Link
+                                  href={record.bibTex}
+                                  target="_blank"
+                                  color="#820000"
+                                  underline="none"
+                                >
+                                  BibTex
+                                </Link>
+                              </>
+                            );
+                          } else {
+                            bibTex = "";
+                          }
+                          if (record.googlePatents !== "") {
+                            googlePatents = (
+                              <>
+                                <InventoryRoundedIcon className="inline-googlePatents"></InventoryRoundedIcon>
+                                <Link
+                                  href={record.googlePatents}
+                                  target="_blank"
+                                  color="#820000"
+                                  underline="none"
+                                >
+                                  Google Patents
+                                </Link>
+                              </>
+                            );
+                          } else {
+                            googlePatents = "";
+                          }
+                          if (record.pubman !== "") {
+                            pubman = (
+                              <>
+                                <PublishedWithChangesRoundedIcon className="inline-pubman"></PublishedWithChangesRoundedIcon>
+                                <Link
+                                  href={record.pubman}
+                                  target="_blank"
+                                  color="#820000"
+                                  underline="none"
+                                >
+                                  Pubman
+                                </Link>
+                              </>
+                            );
+                          } else {
+                            pubman = "";
+                          }
+
                           return (
                             <div>
                               <Paper
@@ -222,6 +283,9 @@ function Research() {
                                       {video}
                                       {moreInfo}
                                       {projectPage}
+                                      {bibTex}
+                                      {googlePatents}
+                                      {pubman}
                                     </Typography>
                                   </Grid>
                                 </Grid>

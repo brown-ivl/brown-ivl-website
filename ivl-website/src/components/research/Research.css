@@ -18,6 +18,21 @@
     margin-left: 10px;
  }
 
+ .inline-bibTex {
+   margin-top: 0px;
+   margin-left: 10px;
+}
+
+.inline-googlePatents {
+   margin-top: 0px;
+   margin-left: 12px;
+}
+
+.inline-pubman {
+   margin-top: 0px;
+   margin-left: 10px;
+}
+
  .inline-scholar-icon {
     margin-top: 0px;
     margin-left: 10px;
