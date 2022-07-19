@@ -1,5 +1,6 @@
 [
     {
+        "category": "Publications",
         "year": 2022,
         "dateOfPublication": "2022",
         "title": "Unsupervised Kinematic Motion Detection for Part-segmented 3D Shape Collections",
@@ -12,6 +13,7 @@
         "image": "images/papers/unsupmotion.png"
     },
     {
+        "category": "Publications",
         "year": 2022,
         "dateOfPublication": "2022-06",
         "title": "ConDor: Self-Supervised Canonicalization of 3D Pose for Partial Shapes",
@@ -24,6 +26,7 @@
         "image": "images/papers/ConDor.jpeg"
     },
     {
+        "category": "Publications",
         "year": 2022,
         "dateOfPublication": "2022-04-05",
         "title": "Neural Fields in Visual Computing and Beyond",
@@ -36,6 +39,7 @@
         "image": "images/papers/neuralfields.jpeg"
     },   
     {
+        "category": "Publications",
         "year": 2021,
         "dateOfPublication": "2021-05-17",
         "title": "StrobeNet: Category-Level Multiview Reconstruction of Articulated Objects",
@@ -48,6 +52,7 @@
         "image": "images/papers/strobenet.gif"
     },
     {
+        "category": "Publications",
         "year": 2021,
         "dateOfPublication": "2021",
         "title": "HuMoR: 3D Human Motion Model for Robust Pose Estimation",
@@ -60,6 +65,7 @@
         "image": "images/papers/humor_iccv21.jpeg"
     },
     {
+        "category": "Publications",
         "year": 2021,
         "dateOfPublication": "2021",
         "title": "DRACO: Weakly Supervised Dense Reconstruction and Canonicalization of Objects",
@@ -72,6 +78,7 @@
         "image": "images/papers/draco_icra21.jpeg"
     },
     {
+        "category": "Publications",
         "year": 2021,
         "dateOfPublication": "2021",
         "title": "Continuous Geodesic Convolutions for Learning on 3D Shapes",
@@ -84,6 +91,7 @@
         "image": "images/papers/cconv.jpeg"
     },
     {
+        "category": "Publications",
         "year": 2021,
         "dateOfPublication": "2021",
         "title": "Representation Learning Through Latent Canonicalizations",
@@ -96,6 +104,7 @@
         "image": "images/papers/latcan.jpeg"
     },
     {
+        "category": "Publications",
         "year": 2020,
         "dateOfPublication": "2020",
         "title": "CaSPR: Learning Canonical Spatiotemporal Point Cloud Representations",
@@ -108,6 +117,7 @@
         "image": "images/papers/caspr.gif"
     },
     {
+        "category": "Publications",
         "year": 2020,
         "dateOfPublication": "2020-08",
         "title": "Pix2Surf: Learning Parametric 3D Surface Models of Objects from Images",
@@ -120,6 +130,7 @@
         "image": "images/papers/pix2surf.jpeg"
     },
     {
+        "category": "Publications",
         "year": 2020,
         "dateOfPublication": "2020",
         "title": "Predicting the Physical Dynamics of Unseen 3D Objects",
@@ -132,6 +143,7 @@
         "image": "images/papers/DynPred2019.jpeg"
     },
     {
+        "category": "Publications",
         "year": 2019,
         "dateOfPublication": "2019",
         "title": "Multiview Aggregation for Learning Category-Specific Shape Reconstruction",
@@ -144,6 +156,7 @@
         "image": "images/papers/xnocs.jpeg"
     },
     {
+        "category": "Publications",
         "year": 2019,
         "dateOfPublication": "2019-06",
         "title": "Normalized Object Coordinate Space for Category-Level 6D Object Pose and Size Estimation",
@@ -156,6 +169,7 @@
         "image": "images/papers/PoseRCNN2019.jpeg"
     },
     {
+        "category": "Publications",
         "year": 2019,
         "dateOfPublication": "2019",
         "title": "Learning Generalizable Physical Dynamics of 3D Rigid Objects",
@@ -168,6 +182,7 @@
         "image": "images/papers/LearningDynamics2019.jpeg"
     },
     {
+        "category": "Publications",
         "year": 2019,
         "dateOfPublication": "2019",
         "title": "Learning a Generative Model for Multi-Step Human-Object Interactions from Videos",
@@ -180,6 +195,7 @@
         "image": "images/papers/GenerativeModel2019.jpeg"
     },
     {
+        "category": "Publications",
         "year": 2018,
         "dateOfPublication": "2018-09",
         "title": "Single-Shot Multi-Person 3D Pose Estimation From Monocular RGB",
@@ -192,6 +208,7 @@
         "image": "images/papers/ss.jpeg"
     },
     {
+        "category": "Publications",
         "year": 2018,
         "dateOfPublication": "2018-06",
         "title": "GANerated Hands for Real-Time 3D Hand Tracking from Monocular RGB",
@@ -204,6 +221,7 @@
         "image": "images/papers/GANHands.jpeg"
     },
     {
+        "category": "Publications",
         "year": 2017,
         "dateOfPublication": "2017-10",
         "title": "Real-time Hand Tracking under Occlusion from an Egocentric RGB-D Sensor",
@@ -216,6 +234,7 @@
         "image": "images/papers/OccludedHands.jpeg"
     },
     {
+        "category": "Publications",
         "year": 2017,
         "dateOfPublication": "2017-07",
         "title": "VNect: Real-time 3D Human Pose Estimation with a Single RGB Camera",
@@ -228,6 +247,7 @@
         "image": "images/papers/VNect_SIGGRAPH2017.jpeg"
     },
     {
+        "category": "Publications",
         "year": 2017,
         "dateOfPublication": "2017-05",
         "title": "WatchSense: On- and Above-Skin Input Sensing through a Wearable Depth Sensor",
@@ -240,6 +260,7 @@
         "image": "images/papers/WatchSense.jpeg"
     },
     {
+        "category": "Publications",
         "year": 2016,
         "dateOfPublication": "2016",
         "title": "Tracking Hands in Action for Gesture-based Computer Input",
@@ -252,6 +273,7 @@
         "image": "images/papers/uds.jpeg"
     },
     {
+        "category": "Publications",
         "year": 2016,
         "dateOfPublication": "2016-10",
         "title": "Real-time Joint Tracking of a Hand Manipulating an Object from RGB-D Input",
@@ -264,6 +286,7 @@
         "image": "images/papers/RealtimeHO_ECCV2016.jpeg"
     },
     {
+        "category": "Publications",
         "year": 2015,
         "dateOfPublication": "2015-06",
         "title": "Fast and Robust Hand Tracking Using Detection-Guided Optimization",
@@ -276,6 +299,7 @@
         "image": "images/papers/FastHandTracker_CVPR2015.jpeg"
     },
     {
+        "category": "Publications",
         "year": 2015,
         "dateOfPublication": "2015",
         "title": "Investigating the Dexterity of Multi-Finger Input for Mid-Air Text Entry",
@@ -288,6 +312,7 @@
         "image": "images/papers/AirType_CHI2015.jpeg"
     },
     {
+        "category": "Publications",
         "year": 2014,
         "dateOfPublication": "2014-12",
         "title": "Real-time Hand Tracking Using a Sum of Anisotropic Gaussians Model",
@@ -300,6 +325,7 @@
         "image": "images/papers/ellipsoidtracker_3dv2014_teaser.jpeg"
     },
     {
+        "category": "Publications",
         "year": 2103,
         "dateOfPublication": "2013-12",
         "title": "Interactive Markerless Articulated Hand Motion Tracking using RGB and Depth Data",
@@ -312,6 +338,7 @@
         "image": "images/papers/handtracker_iccv2013.jpeg"
     },
     {
+        "category": "Publications",
         "year": 2013,
         "dateOfPublication": "2013",
         "title": "User-Centered Perspectives for Automotive Augmented Reality",
@@ -322,5 +349,90 @@
         "moreInfo": "",
         "video": "",
         "image": "images/papers/automated_augmented_reality.jpeg"
+    },
+    {
+        "category": "Posters",
+        "year": 2013,
+        "dateOfPublication": "2013",
+        "title": "HandSonor: A Customizable Vision-based Control Interface for Musical Expression",
+        "authors": "Srinath Sridhar",
+        "journal": "Extended Abstracts, SIGCHI Conference on Human Factors in Computing Systems (CHI) 2013",
+        "projectPage": "http://handtracker.mpi-inf.mpg.de/projects/handsonor/",
+        "pdf": "http://handtracker.mpi-inf.mpg.de/projects/handsonor/handsonor2013.pdf",
+        "moreInfo": "",
+        "video": "",
+        "image": "images/papers/Handsonor.jpeg"
+    },
+    {
+        "category": "Posters",
+        "year": 2012,
+        "dateOfPublication": "2012",
+        "title": "Generation of Virtual Display Surfaces for In-vehicle Contextual Augmented Reality",
+        "authors": "Srinath Sridhar, Victor Ng-Thow-Hing",
+        "journal": "International Symposium on on Mixed and Augmented Reality (ISMAR) 2012",
+        "projectPage": "https://cs.brown.edu/people/ssrinath/pubs/ismar2012.pdf",
+        "pdf": "https://cs.brown.edu/people/ssrinath/pubs/ismar2012.pdf",
+        "moreInfo": "",
+        "video": "",
+        "image": "images/papers/ISMAR.jpeg"
+    },
+    {
+        "category": "Patents",
+        "year": 2015,
+        "dateOfPublication": "2015",
+        "title": "Method to Generate Virtual Display Surfaces from Video Imagery of Road based Scenery",
+        "authors": "Victor Ng-Thow-Hing, Srinath Sridhar",
+        "journal": "U.S. Patent, US 9135754 B2, 2015",
+        "projectPage": "https://patents.google.com/patent/US20130293582",
+        "pdf": "",
+        "moreInfo": "",
+        "googlePatents": "https://patents.google.com/patent/US20130293582",
+        "video": "",
+        "image": "images/papers/US20130293582A1.png"
+    },
+    {
+        "category": "Technical Reports",
+        "year": 2016,
+        "dateOfPublication": "2016",
+        "title": "FullHand: Markerless Skeleton-based Tracking for Free-Hand Interaction",
+        "authors": "Srinath Sridhar, Gilles Bailly, Elias Heydrich, Antti Oulasvirta, Christian Theobalt",
+        "journal": "MPI-I-2016-4-002. Saarbrücken: Max-Planck-Institut für Informatik 2016",
+        "projectPage": "https://cs.brown.edu/people/ssrinath/pubs/MPI-I-2016-4-002.pdf",
+        "pdf": "https://cs.brown.edu/people/ssrinath/pubs/MPI-I-2016-4-002.pdf",
+        "moreInfo": "",
+        "googlePatents": "",
+        "pubman": "https://pure.mpg.de/pubman/faces/ViewItemOverviewPage.jsp?itemId=item_2347450",
+        "video": "",
+        "image": "images/papers/MPI-I-2016-4-002_lores.jpeg"
+    },
+    {
+        "category": "Technical Reports",
+        "year": 2014,
+        "dateOfPublication": "2014",
+        "title": "Fast Tracking of Hand and Finger Articulations Using a Single Depth Camera",
+        "authors": "Srinath Sridhar, Antti Oulasvirta, Christian Theobalt",
+        "journal": "MPI-I-2014-4-002. Saarbrücken: Max-Planck-Institut für Informatik 2014",
+        "projectPage": "https://cs.brown.edu/people/ssrinath/pubs/MPI-I-2014-4-002.pdf",
+        "pdf": "https://cs.brown.edu/people/ssrinath/pubs/MPI-I-2014-4-002.pdf",
+        "moreInfo": "",
+        "googlePatents": "",
+        "pubman": "https://pure.mpg.de/pubman/faces/ViewItemOverviewPage.jsp?itemId=item_2087328",
+        "video": "",
+        "image": "images/papers/sridhar_report15.png"
+    },
+    {
+        "category": "Technical Reports",
+        "year": 2012,
+        "dateOfPublication": "2012",
+        "title": "CAMFPLAN: A Real-time Markerless Camera Pose Estimation System for Augmented Reality",
+        "authors": "Srinath Sridhar, Vineet R. Kamat",
+        "journal": "UMCEE Report No. 11-01, Department of Civil and Environmental Engineering, University of Michigan, Ann Arbor 2012",
+        "projectPage": "https://cs.brown.edu/people/ssrinath/pubs/Report_UMCEE-2011-01.pdf",
+        "pdf": "https://cs.brown.edu/people/ssrinath/pubs/Report_UMCEE-2011-01.pdf",
+        "moreInfo": "",
+        "googlePatents": "",
+        "pubman": "",
+        "video": "",
+        "image": "images/papers/umich.jpeg"
     }
 ]

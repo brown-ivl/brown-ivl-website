@@ -17,7 +17,7 @@ export default function RecipeReviewCard() {
       uniqueCategories.push(record.category);
     }
   });
-  console.log(uniqueCategories);
+  // console.log(uniqueCategories);
 
   return (
     <div>
@@ -34,7 +34,7 @@ export default function RecipeReviewCard() {
         {uniqueCategories.map((category) => {
           if (category !== "Brown IVL Alumni") {
             return (
-              <div key={category}>
+              <div>
                 <div className="center">
                   <Typography variant="h5" align="center" marginTop={2}>
                     {category}
@@ -56,7 +56,7 @@ export default function RecipeReviewCard() {
                     }
                     if (person.category === category) {
                       return (
-                        <Grid item key={person.name}>
+                        <Grid item>
                           <Card
                             sx={{
                               width: 200,
@@ -104,7 +104,7 @@ export default function RecipeReviewCard() {
             );
           } else {
             return (
-              <div key={category}>
+              <div>
                 <div className="center">
                   <Typography variant="h5" align="left" marginTop={2}>
                     {category}
