@@ -50,11 +50,10 @@ Outside of Brown, I spend part of time as a Visiting Academic at [Amazon Robotic
 * [ Jun-2022 ]: At CVPR, we will be presenting a paper on 3D pose canonicalization (ConDor) and a tutorial on neural fields. Please see the [ConDor project page](https://ivl.cs.brown.edu/ConDor/) and [Neural Fields tutorial page](https://neuralfields.cs.brown.edu/cvpr22.html) for more details.
 * [ Apr-2022 ]: Our Eurographics STAR [report and companion website](https://neuralfields.cs.brown.edu/) provides a consolidated overview of coordinate-based neural networks (**neural fields**) in visual computing and beyond by reviewing over 250 papers.
 * [ Mar-2022 ]: Srinath received the [NSF CAREER award](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2143576) that will help further the group's research on 3D perception of human physical skills.
-* [ Nov-2021 ]: Our new [report and companion website](https://neuralfields.cs.brown.edu/) provides a consolidated overview of coordinate-based neural networks (neural fields) in visual computing and beyond by reviewing over 250 papers.
+* [ Oct-2021 ]: I helped co-organize the [Second 3DReps workshop](https://ivl.cs.brown.edu/3DReps/) at ICCV. The workshop recording is now available at this [link](https://www.youtube.com/watch?v=4VKTE1Svl30).
 
 # Collapsible Updates
 
-* [ Oct-2021 ]: I helped co-organize the [Second 3DReps workshop](https://ivl.cs.brown.edu/3DReps/) at ICCV. The workshop recording is now available at this [link](https://www.youtube.com/watch?v=4VKTE1Svl30).
 * [ Oct-2021 ]: [HuMoR](https://geometry.stanford.edu/projects/humor/), a human motion model for robust pose estimation will be presented at ICCV 2021.
 * [ Apr-2021 ]: Srinath received a [Google Research Scholar](https://research.google/outreach/research-scholar-program/recipients/) award to further the group's research on object-centric perception/synthesis for mixed reality.
 * [ Mar-2021 ]: Our upcoming [ICRA paper](https://aadilmehdis.github.io/DRACO-Project-Page/) shows how to learn to densely reconstruct and canonicalize shapes with only weak supervision. Please see the [project page](https://aadilmehdis.github.io/DRACO-Project-Page/) for details, code, and data.
